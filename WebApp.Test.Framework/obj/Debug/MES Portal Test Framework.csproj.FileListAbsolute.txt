@@ -1,0 +1,16 @@
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\ThoughtWorks.Selenium.Core.dll
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\WebDriver.dll
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\WebDriver.Support.dll
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\Selenium.WebDriverBackedSelenium.pdb
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\Selenium.WebDriverBackedSelenium.xml
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\ThoughtWorks.Selenium.Core.pdb
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\ThoughtWorks.Selenium.Core.xml
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\WebDriver.pdb
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\WebDriver.xml
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\WebDriver.Support.pdb
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\WebDriver.Support.xml
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\MES_Portal_TestFramework.dll
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\MES_Portal_TestFramework.pdb
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\obj\Debug\MES_Portal_TestFramework.dll
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\obj\Debug\MES_Portal_TestFramework.pdb

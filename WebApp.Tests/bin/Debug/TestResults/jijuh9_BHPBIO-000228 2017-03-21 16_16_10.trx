@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2f9b1636-6739-48e8-b2dc-6621264fcec7" name="jijuh9@BHPBIO-000228 2017-03-21 16:16:10" runUser="APAC\jijuh9" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="bf630a92-8080-4bb0-8418-90da1af41c5c">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="jijuh9_BHPBIO-000228 2017-03-21 16_16_10" />
+    <Properties />
+  </TestSettings>
+  <Times creation="2017-03-21T16:16:10.2870368+08:00" queuing="2017-03-21T16:16:11.4691550+08:00" start="2017-03-21T16:16:11.5981679+08:00" finish="2017-03-21T16:21:39.3829431+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="32" executed="32" passed="29" error="0" failed="3" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="QueryEquipment_Port_CoreRoutes" storage="mes.portal.tests.dll" id="68eaa6c2-53b1-1a56-29f8-9a2389b54f96">
+      <Description>QueryEquipment: Port-Core Routes</Description>
+      <Execution id="fd037295-8201-4cf4-bfcf-89ea43c4fc59" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Feature_MasterData</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>Port-Core Routes</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Site</Key>
+          <Value>Port</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Class</Key>
+          <Value>Core Routes</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:ScenarioName</Key>
+          <Value>Port-Core Routes</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.Features.MasterData.Feature_MasterDataFeature, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueryEquipment_Port_CoreRoutes" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_PropertiesPage" storage="mes.portal.tests.dll" id="f5f4a241-71fc-9638-48f2-59898c7f640c">
+      <Execution id="481e42e9-a9fb-49e8-9352-8f57ccafa8c3" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.ResourcesTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_PropertiesPage" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_CrewingCoordinator" storage="mes.portal.tests.dll" id="2324cc0f-00b3-c515-1301-62dc212f56b9">
+      <Execution id="64e3b525-cadc-483f-b22a-2c70ef149897" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.RailTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_CrewingCoordinator" />
+    </UnitTest>
+    <UnitTest name="QueryEquipment_Port_OreProcessing" storage="mes.portal.tests.dll" id="06ead74c-f3bf-a442-9b3b-1c292137b7f0">
+      <Description>QueryEquipment: Port-Ore Processing</Description>
+      <Execution id="90330f7c-19c7-45a9-853d-e890bf998d2d" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Feature_MasterData</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>Port-Ore Processing</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Site</Key>
+          <Value>Port</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Class</Key>
+          <Value>Ore Processing</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:ScenarioName</Key>
+          <Value>Port-Ore Processing</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.Features.MasterData.Feature_MasterDataFeature, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueryEquipment_Port_OreProcessing" />
+    </UnitTest>
+    <UnitTest name="Can_GoTo_Alerts" storage="mes.portal.tests.dll" id="8c8dbd7d-ffa8-80c2-7c83-6384b67b4a58">
+      <Execution id="838bdd77-a764-4bfd-abb8-352b1d48c1b0" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.DashboardTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_GoTo_Alerts" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_SchedulingPage" storage="mes.portal.tests.dll" id="b472f8aa-4efa-8de5-f59f-c016cdeebe07">
+      <Execution id="deb9cec7-3eb6-413d-be1f-c5ce22912970" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.ResourcesTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_SchedulingPage" />
+    </UnitTest>
+    <UnitTest name="EditEquipment_ControlSystemCarDumper1CD1Ctrl" storage="mes.portal.tests.dll" id="729428af-b95a-4a8c-5296-b3abaf3c990f">
+      <Description>Edit Equipment: Control System Car Dumper 1 CD1Ctrl</Description>
+      <Execution id="a7febf40-abe2-410b-a014-ce7adb3f7ede" />
+      <Properties>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>Control System Car Dumper 1 CD1Ctrl</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Tracked</Key>
+          <Value>No</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:EquipmentItemId</Key>
+          <Value>2</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Comment</Key>
+          <Value>Automation Test</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:ScenarioName</Key>
+          <Value>Control System Car Dumper 1 CD1Ctrl</Value>
+        </Property>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Feature_Downtime</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.Features.Downtime.Feature_DowntimeFeature, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EditEquipment_ControlSystemCarDumper1CD1Ctrl" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_MaintenancePage" storage="mes.portal.tests.dll" id="ee497598-c0f1-cec4-6b63-6e09787d2744">
+      <Execution id="839bd11e-b3ef-402a-822e-dc4146b56624" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.MaintenanceTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_MaintenancePage" />
+    </UnitTest>
+    <UnitTest name="EditTTRConfiguration_EquipmentId3349" storage="mes.portal.tests.dll" id="e200f348-02ff-6b41-4df3-7190917f3407">
+      <Description>Edit TTR Configuration: EquipmentId 3349</Description>
+      <Execution id="5a41a7b2-bd17-4315-866a-bc290212d5c3" />
+      <Properties>
+        <Property>
+          <Key>Parameter:EquipmentId</Key>
+          <Value>3349</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:RulePriority</Key>
+          <Value>96</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>EquipmentId 3349</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:ScenarioName</Key>
+          <Value>EquipmentId 3349</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Active</Key>
+          <Value>Yes</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:AssignmentDuration</Key>
+          <Value>46</Value>
+        </Property>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Feature_Maintenance</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.Features.Maintenance.Feature_MaintenanceFeature, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EditTTRConfiguration_EquipmentId3349" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_TTRConfigurationPage" storage="mes.portal.tests.dll" id="a2b536f5-6b74-6f53-ffe1-f88215e922ad">
+      <Execution id="52135989-9185-4ac9-b067-d8c6407b518e" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.MaintenanceTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_TTRConfigurationPage" />
+    </UnitTest>
+    <UnitTest name="Downtime_Can_Goto_DowntimeDashboard" storage="mes.portal.tests.dll" id="5ec42060-c286-9e13-68e0-8c15f92ce4e8">
+      <Execution id="5dfb9304-7ec2-4543-a228-03387a41e073" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.DowntimeTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Downtime_Can_Goto_DowntimeDashboard" />
+    </UnitTest>
+    <UnitTest name="Scheduling_CreateOpportuneMaintenance_AllRailTrack" storage="mes.portal.tests.dll" id="ccf76d01-f34c-b8ee-1374-cef82646d601">
+      <Description>Scheduling_Create Opportune Maintenance: all rail track</Description>
+      <Execution id="f38e7070-fe35-401e-af74-3c2d3fb4b951" />
+      <Properties>
+        <Property>
+          <Key>Parameter:EquipmentClassName</Key>
+          <Value>all rail track</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>all rail track</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:EquipmentClassId</Key>
+          <Value>RN.Track</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:AssignmentType</Key>
+          <Value>Opportune Maintenance (Placeholder)</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:EndTime</Key>
+          <Value>20/03/2017 16:06</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:StartTime</Key>
+          <Value>20/03/2017 15:06</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:ResourceCode</Key>
+          <Value>Track - Track network</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:ActivityName</Key>
+          <Value>Activity Test</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:ScenarioName</Key>
+          <Value>all rail track</Value>
+        </Property>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Feature_Resource</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.Features.Resources.Feature_ResourceFeature, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Scheduling_CreateOpportuneMaintenance_AllRailTrack" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_MasterDataPage" storage="mes.portal.tests.dll" id="4b6942d5-7f10-a40e-b6a4-8b5c08421f35">
+      <Execution id="df2f9651-8344-40c0-9689-840c0cb7180b" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.MasterDataTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_MasterDataPage" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_ManagementPage" storage="mes.portal.tests.dll" id="b62e5130-99f6-f863-b30c-bcf983b8a281">
+      <Execution id="f801d2a2-f921-486d-b105-052965ad43e8" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.ResourcesTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_ManagementPage" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_Dashboard" storage="mes.portal.tests.dll" id="14644dc0-dee0-3e6b-2a7e-b802e07a6ca4">
+      <Execution id="caef473c-d221-4e6e-9c78-b2a3dc6ed01a" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.DashboardTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_Dashboard" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_ResourcesPage" storage="mes.portal.tests.dll" id="a3a58970-c5d3-644f-b44c-f8e2fa54dc8a">
+      <Execution id="fb8aa0df-e305-474d-bc30-af6862faa43f" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.ResourcesTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_ResourcesPage" />
+    </UnitTest>
+    <UnitTest name="Downtime_Can_Goto_OpenEventsPage" storage="mes.portal.tests.dll" id="e309a168-4792-54b1-c68f-2d997deb3448">
+      <Execution id="85b48a9b-db1b-4c10-a6fb-e978d6c5c505" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.DowntimeTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Downtime_Can_Goto_OpenEventsPage" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_PlanningPage" storage="mes.portal.tests.dll" id="d4652a46-4862-77ee-9fdc-1ec6eeb3dd7a">
+      <Execution id="7c122b0f-65ef-4da7-9a94-5444abc8acda" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.Planning.Tests.PlanningTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_PlanningPage" />
+    </UnitTest>
+    <UnitTest name="Downtime_Can_Goto_ClosedEventsPage" storage="mes.portal.tests.dll" id="3fa50495-1dca-fc3a-e104-6c95c3f73642">
+      <Execution id="3c821855-ba72-4f63-99ab-cb9d9a627980" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.DowntimeTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Downtime_Can_Goto_ClosedEventsPage" />
+    </UnitTest>
+    <UnitTest name="Downtime_Can_Goto_EquipmentClassPage" storage="mes.portal.tests.dll" id="ab4bf28a-0207-660a-16c5-397199a9071a">
+      <Execution id="ca0772cc-c59b-421b-b6cc-aae7c176640f" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.DowntimeTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Downtime_Can_Goto_EquipmentClassPage" />
+    </UnitTest>
+    <UnitTest name="EditTTRConfiguration_EquipmentId3350" storage="mes.portal.tests.dll" id="fd45758c-0558-4270-4fba-b5cbbca0f9e0">
+      <Description>Edit TTR Configuration: EquipmentId 3350</Description>
+      <Execution id="f30e9412-3c7d-4299-860a-f0ca086a8343" />
+      <Properties>
+        <Property>
+          <Key>Parameter:EquipmentId</Key>
+          <Value>3350</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:RulePriority</Key>
+          <Value>98</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>EquipmentId 3350</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:ScenarioName</Key>
+          <Value>EquipmentId 3350</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Active</Key>
+          <Value>Yes</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:AssignmentDuration</Key>
+          <Value>48</Value>
+        </Property>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Feature_Maintenance</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.Features.Maintenance.Feature_MaintenanceFeature, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EditTTRConfiguration_EquipmentId3350" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_AssignmentsPage" storage="mes.portal.tests.dll" id="33416784-3ee2-381c-035d-d4daf88ad226">
+      <Execution id="b75fa1fb-8377-415d-95ab-a9e6dfce0f83" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.ResourcesTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_AssignmentsPage" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_TTROverrides" storage="mes.portal.tests.dll" id="2fd3e29e-2308-7f15-6f9c-a7f317baad8b">
+      <Execution id="8ca7160f-60dd-40b2-925d-6b7e9986a557" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.MaintenanceTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_TTROverrides" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_EquipmentPage" storage="mes.portal.tests.dll" id="f4f1c008-8bf4-06d3-1aa0-bb0004922893">
+      <Execution id="f7f20e5b-855e-45b1-9d68-8d8974a71c52" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.MasterDataTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_EquipmentPage" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_TrainGraph" storage="mes.portal.tests.dll" id="2a6e4995-29e8-eec4-b322-a4a801e2261e">
+      <Execution id="ba9e8c06-36a9-42b3-8c74-010623d071e5" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.RailTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_TrainGraph" />
+    </UnitTest>
+    <UnitTest name="EditEquipment_CarDumperCD1" storage="mes.portal.tests.dll" id="bebba703-ab53-633a-4476-dc06bec447ac">
+      <Description>Edit Equipment: Car Dumper CD 1</Description>
+      <Execution id="1a8e5107-abef-4bf9-ac94-c35ee153c931" />
+      <Properties>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>Car Dumper CD 1</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Tracked</Key>
+          <Value>Yes</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:EquipmentItemId</Key>
+          <Value>1</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Comment</Key>
+          <Value>Automation Test</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:ScenarioName</Key>
+          <Value>Car Dumper CD 1</Value>
+        </Property>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Feature_Downtime</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.Features.Downtime.Feature_DowntimeFeature, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EditEquipment_CarDumperCD1" />
+    </UnitTest>
+    <UnitTest name="EditEquipmentClass_CarDumper" storage="mes.portal.tests.dll" id="e63ad6ea-1000-11e3-b129-089bfa814983">
+      <Description>Edit Equipment Class: Car Dumper</Description>
+      <Execution id="a806d9bf-ae7b-453b-9244-5b3052085e3e" />
+      <Properties>
+        <Property>
+          <Key>Parameter:EventCreationDelay</Key>
+          <Value>60</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>Car Dumper</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:EquipmentClassId</Key>
+          <Value>5</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Tracked</Key>
+          <Value>Yes</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:PublishNonAutoClassification</Key>
+          <Value>No</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Comment</Key>
+          <Value>Automation Testing</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:PreEventAlarmInclusion</Key>
+          <Value>6</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:ScenarioName</Key>
+          <Value>Car Dumper</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:NotificationDelay</Key>
+          <Value>1</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:PublishAutoClassification</Key>
+          <Value>Yes</Value>
+        </Property>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Feature_Downtime</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.Features.Downtime.Feature_DowntimeFeature, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EditEquipmentClass_CarDumper" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_RailPage" storage="mes.portal.tests.dll" id="acf70753-e581-0dd9-cdc9-37b262a291e5">
+      <Execution id="bea1548e-266d-48cf-b43d-7e9a2c9d3255" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.RailTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_RailPage" />
+    </UnitTest>
+    <UnitTest name="Can_GoTo_Setting" storage="mes.portal.tests.dll" id="3b64cd87-6787-b0dc-d448-4b45e3fd392a">
+      <Execution id="3a0840e5-e2ba-4ff1-8ed3-fb6ee8c990d6" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.DashboardTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_GoTo_Setting" />
+    </UnitTest>
+    <UnitTest name="EditEquipmentClass_Chute" storage="mes.portal.tests.dll" id="bb21122b-de1c-ad9f-7b12-99f1488511b9">
+      <Description>Edit Equipment Class: Chute</Description>
+      <Execution id="cf6252e7-6e53-4bcb-a473-628d11910542" />
+      <Properties>
+        <Property>
+          <Key>Parameter:EventCreationDelay</Key>
+          <Value>30</Value>
+        </Property>
+        <Property>
+          <Key>VariantName</Key>
+          <Value>Chute</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:EquipmentClassId</Key>
+          <Value>6</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Tracked</Key>
+          <Value>Yes</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:PublishNonAutoClassification</Key>
+          <Value>Yes</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:Comment</Key>
+          <Value>Automation Testing</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:PreEventAlarmInclusion</Key>
+          <Value>10</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:ScenarioName</Key>
+          <Value>Chute</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:NotificationDelay</Key>
+          <Value>2</Value>
+        </Property>
+        <Property>
+          <Key>Parameter:PublishAutoClassification</Key>
+          <Value>No</Value>
+        </Property>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Feature_Downtime</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.Features.Downtime.Feature_DowntimeFeature, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EditEquipmentClass_Chute" />
+    </UnitTest>
+    <UnitTest name="Can_Goto_IEOnlyPage" storage="mes.portal.tests.dll" id="970e7fec-a19e-8405-3d5b-41ed3b2a08b8">
+      <Execution id="d61ad432-571e-41e4-b3f0-6009c2847f56" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.Planning.Tests.PlanningTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Goto_IEOnlyPage" />
+    </UnitTest>
+    <UnitTest name="Downtime_Can_Goto_EquipmentPage" storage="mes.portal.tests.dll" id="8cb5bcfe-cde6-1102-b4f8-b8235a8c7e9e">
+      <Execution id="868ccd33-9d91-46e1-9aa7-ee1c4ee5abbe" />
+      <TestMethod codeBase="C:/Workspace/CSharp/MES.Portal.Tests/MES.Portal.Tests/bin/Debug/MES.Portal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MES.Portal.Tests.DowntimeTests, MES.Portal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Downtime_Can_Goto_EquipmentPage" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="8c8dbd7d-ffa8-80c2-7c83-6384b67b4a58" executionId="838bdd77-a764-4bfd-abb8-352b1d48c1b0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="14644dc0-dee0-3e6b-2a7e-b802e07a6ca4" executionId="caef473c-d221-4e6e-9c78-b2a3dc6ed01a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3b64cd87-6787-b0dc-d448-4b45e3fd392a" executionId="3a0840e5-e2ba-4ff1-8ed3-fb6ee8c990d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3fa50495-1dca-fc3a-e104-6c95c3f73642" executionId="3c821855-ba72-4f63-99ab-cb9d9a627980" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5ec42060-c286-9e13-68e0-8c15f92ce4e8" executionId="5dfb9304-7ec2-4543-a228-03387a41e073" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab4bf28a-0207-660a-16c5-397199a9071a" executionId="ca0772cc-c59b-421b-b6cc-aae7c176640f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8cb5bcfe-cde6-1102-b4f8-b8235a8c7e9e" executionId="868ccd33-9d91-46e1-9aa7-ee1c4ee5abbe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e309a168-4792-54b1-c68f-2d997deb3448" executionId="85b48a9b-db1b-4c10-a6fb-e978d6c5c505" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bebba703-ab53-633a-4476-dc06bec447ac" executionId="1a8e5107-abef-4bf9-ac94-c35ee153c931" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="729428af-b95a-4a8c-5296-b3abaf3c990f" executionId="a7febf40-abe2-410b-a014-ce7adb3f7ede" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e63ad6ea-1000-11e3-b129-089bfa814983" executionId="a806d9bf-ae7b-453b-9244-5b3052085e3e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb21122b-de1c-ad9f-7b12-99f1488511b9" executionId="cf6252e7-6e53-4bcb-a473-628d11910542" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e200f348-02ff-6b41-4df3-7190917f3407" executionId="5a41a7b2-bd17-4315-866a-bc290212d5c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd45758c-0558-4270-4fba-b5cbbca0f9e0" executionId="f30e9412-3c7d-4299-860a-f0ca086a8343" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="68eaa6c2-53b1-1a56-29f8-9a2389b54f96" executionId="fd037295-8201-4cf4-bfcf-89ea43c4fc59" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06ead74c-f3bf-a442-9b3b-1c292137b7f0" executionId="90330f7c-19c7-45a9-853d-e890bf998d2d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ccf76d01-f34c-b8ee-1374-cef82646d601" executionId="f38e7070-fe35-401e-af74-3c2d3fb4b951" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee497598-c0f1-cec4-6b63-6e09787d2744" executionId="839bd11e-b3ef-402a-822e-dc4146b56624" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2b536f5-6b74-6f53-ffe1-f88215e922ad" executionId="52135989-9185-4ac9-b067-d8c6407b518e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2fd3e29e-2308-7f15-6f9c-a7f317baad8b" executionId="8ca7160f-60dd-40b2-925d-6b7e9986a557" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4f1c008-8bf4-06d3-1aa0-bb0004922893" executionId="f7f20e5b-855e-45b1-9d68-8d8974a71c52" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b6942d5-7f10-a40e-b6a4-8b5c08421f35" executionId="df2f9651-8344-40c0-9689-840c0cb7180b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="970e7fec-a19e-8405-3d5b-41ed3b2a08b8" executionId="d61ad432-571e-41e4-b3f0-6009c2847f56" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d4652a46-4862-77ee-9fdc-1ec6eeb3dd7a" executionId="7c122b0f-65ef-4da7-9a94-5444abc8acda" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2324cc0f-00b3-c515-1301-62dc212f56b9" executionId="64e3b525-cadc-483f-b22a-2c70ef149897" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="acf70753-e581-0dd9-cdc9-37b262a291e5" executionId="bea1548e-266d-48cf-b43d-7e9a2c9d3255" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a6e4995-29e8-eec4-b322-a4a801e2261e" executionId="ba9e8c06-36a9-42b3-8c74-010623d071e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="33416784-3ee2-381c-035d-d4daf88ad226" executionId="b75fa1fb-8377-415d-95ab-a9e6dfce0f83" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b62e5130-99f6-f863-b30c-bcf983b8a281" executionId="f801d2a2-f921-486d-b105-052965ad43e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f5f4a241-71fc-9638-48f2-59898c7f640c" executionId="481e42e9-a9fb-49e8-9352-8f57ccafa8c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3a58970-c5d3-644f-b44c-f8e2fa54dc8a" executionId="fb8aa0df-e305-474d-bc30-af6862faa43f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b472f8aa-4efa-8de5-f59f-c016cdeebe07" executionId="deb9cec7-3eb6-413d-be1f-c5ce22912970" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="838bdd77-a764-4bfd-abb8-352b1d48c1b0" testId="8c8dbd7d-ffa8-80c2-7c83-6384b67b4a58" testName="Can_GoTo_Alerts" computerName="BHPBIO-000228" duration="00:00:09.7640794" startTime="2017-03-21T16:16:11.6781759+08:00" endTime="2017-03-21T16:16:21.7991879+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="838bdd77-a764-4bfd-abb8-352b1d48c1b0">
+    </UnitTestResult>
+    <UnitTestResult executionId="caef473c-d221-4e6e-9c78-b2a3dc6ed01a" testId="14644dc0-dee0-3e6b-2a7e-b802e07a6ca4" testName="Can_Goto_Dashboard" computerName="BHPBIO-000228" duration="00:00:07.0342620" startTime="2017-03-21T16:16:21.8041884+08:00" endTime="2017-03-21T16:16:28.8418921+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="caef473c-d221-4e6e-9c78-b2a3dc6ed01a">
+    </UnitTestResult>
+    <UnitTestResult executionId="3a0840e5-e2ba-4ff1-8ed3-fb6ee8c990d6" testId="3b64cd87-6787-b0dc-d448-4b45e3fd392a" testName="Can_GoTo_Setting" computerName="BHPBIO-000228" duration="00:00:07.0795493" startTime="2017-03-21T16:16:28.8568936+08:00" endTime="2017-03-21T16:16:35.9466025+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a0840e5-e2ba-4ff1-8ed3-fb6ee8c990d6">
+    </UnitTestResult>
+    <UnitTestResult executionId="3c821855-ba72-4f63-99ab-cb9d9a627980" testId="3fa50495-1dca-fc3a-e104-6c95c3f73642" testName="Downtime_Can_Goto_ClosedEventsPage" computerName="BHPBIO-000228" duration="00:00:07.7799384" startTime="2017-03-21T16:16:35.9596038+08:00" endTime="2017-03-21T16:16:43.7623840+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c821855-ba72-4f63-99ab-cb9d9a627980">
+    </UnitTestResult>
+    <UnitTestResult executionId="5dfb9304-7ec2-4543-a228-03387a41e073" testId="5ec42060-c286-9e13-68e0-8c15f92ce4e8" testName="Downtime_Can_Goto_DowntimeDashboard" computerName="BHPBIO-000228" duration="00:00:08.1986552" startTime="2017-03-21T16:16:43.7773855+08:00" endTime="2017-03-21T16:16:51.9792056+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5dfb9304-7ec2-4543-a228-03387a41e073">
+    </UnitTestResult>
+    <UnitTestResult executionId="ca0772cc-c59b-421b-b6cc-aae7c176640f" testId="ab4bf28a-0207-660a-16c5-397199a9071a" testName="Downtime_Can_Goto_EquipmentClassPage" computerName="BHPBIO-000228" duration="00:00:07.6084704" startTime="2017-03-21T16:16:51.9872064+08:00" endTime="2017-03-21T16:16:59.6039680+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ca0772cc-c59b-421b-b6cc-aae7c176640f">
+    </UnitTestResult>
+    <UnitTestResult executionId="868ccd33-9d91-46e1-9aa7-ee1c4ee5abbe" testId="8cb5bcfe-cde6-1102-b4f8-b8235a8c7e9e" testName="Downtime_Can_Goto_EquipmentPage" computerName="BHPBIO-000228" duration="00:00:10.8247666" startTime="2017-03-21T16:16:59.6209697+08:00" endTime="2017-03-21T16:17:10.4530528+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="868ccd33-9d91-46e1-9aa7-ee1c4ee5abbe">
+    </UnitTestResult>
+    <UnitTestResult executionId="85b48a9b-db1b-4c10-a6fb-e978d6c5c505" testId="e309a168-4792-54b1-c68f-2d997deb3448" testName="Downtime_Can_Goto_OpenEventsPage" computerName="BHPBIO-000228" duration="00:00:07.2647977" startTime="2017-03-21T16:17:10.4700545+08:00" endTime="2017-03-21T16:17:17.7397814+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="85b48a9b-db1b-4c10-a6fb-e978d6c5c505">
+    </UnitTestResult>
+    <UnitTestResult executionId="1a8e5107-abef-4bf9-ac94-c35ee153c931" testId="bebba703-ab53-633a-4476-dc06bec447ac" testName="EditEquipment_CarDumperCD1" computerName="BHPBIO-000228" duration="00:00:18.7724161" startTime="2017-03-21T16:17:17.7557830+08:00" endTime="2017-03-21T16:17:36.6606733+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1a8e5107-abef-4bf9-ac94-c35ee153c931">
+      <Output>
+        <StdOut>Given Go to Downtime &gt; Equipment
+-&gt; done: EditEquipmentSteps.GivenGoToDowntimeEquipment() (3.1s)
+And Edit the following fileds on Downtime &gt; Equipement &gt; Edit screen
+  --- table step argument ---
+  | EquipmentItemId | Tracked | Comment         |
+  | 1               | Yes     | Automation Test |
+-&gt; done: EditEquipmentSteps.GivenEditTheFollowingFiledsOnDowntimeEquipementEditScreen(&lt;table&gt;) (5.8s)
+When Click Save button on Downtime &gt; Equipment &gt; Edit screen
+-&gt; done: EditEquipmentSteps.WhenClickSaveButtonOnDowntimeEquipmentEditScreen() (0.3s)
+Then the modification of Downtime &gt; Equipment &gt; Edit screen should be persistent
+-&gt; done: EditEquipmentSteps.ThenTheModificationOfDowntimeEquipmentEditScreenShouldBePersistent() (5.2s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a7febf40-abe2-410b-a014-ce7adb3f7ede" testId="729428af-b95a-4a8c-5296-b3abaf3c990f" testName="EditEquipment_ControlSystemCarDumper1CD1Ctrl" computerName="BHPBIO-000228" duration="00:00:13.9950136" startTime="2017-03-21T16:17:36.6726745+08:00" endTime="2017-03-21T16:17:50.6720743+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7febf40-abe2-410b-a014-ce7adb3f7ede">
+      <Output>
+        <StdOut>Given Go to Downtime &gt; Equipment
+-&gt; done: EditEquipmentSteps.GivenGoToDowntimeEquipment() (2.4s)
+And Edit the following fileds on Downtime &gt; Equipement &gt; Edit screen
+  --- table step argument ---
+  | EquipmentItemId | Tracked | Comment         |
+  | 2               | No      | Automation Test |
+-&gt; done: EditEquipmentSteps.GivenEditTheFollowingFiledsOnDowntimeEquipementEditScreen(&lt;table&gt;) (2.4s)
+When Click Save button on Downtime &gt; Equipment &gt; Edit screen
+-&gt; done: EditEquipmentSteps.WhenClickSaveButtonOnDowntimeEquipmentEditScreen() (0.2s)
+Then the modification of Downtime &gt; Equipment &gt; Edit screen should be persistent
+-&gt; done: EditEquipmentSteps.ThenTheModificationOfDowntimeEquipmentEditScreenShouldBePersistent() (4.5s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a806d9bf-ae7b-453b-9244-5b3052085e3e" testId="e63ad6ea-1000-11e3-b129-089bfa814983" testName="EditEquipmentClass_CarDumper" computerName="BHPBIO-000228" duration="00:00:11.0483355" startTime="2017-03-21T16:17:50.6830754+08:00" endTime="2017-03-21T16:18:01.7421812+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a806d9bf-ae7b-453b-9244-5b3052085e3e">
+      <Output>
+        <StdOut>Given Go to Downtime &gt; Equipment Class
+-&gt; done: EditEquipmentClassSteps.GivenGoGoDowntimeEquipmentClass() (2.9s)
+And Edit the following fields on Downtime &gt; Equipment Class &gt; Edit screen
+  --- table step argument ---
+  | EquipmentClassId | Tracked | PreEventAlarmInclusion | EventCreationDelay | NotificationDelay | PublishAutoClassification | PublishNonAutoClassification | Comment            |
+  | 5                | Yes     | 6                      | 60                 | 1                 | Yes                       | No                           | Automation Testing |
+-&gt; done: EditEquipmentClassSteps.GivenEditTheFollowingFieldsOnDowntimeEquipmentClassEditScreen(&lt;table&gt;) (1.6s)
+When Click Save button on Downtime &gt; Equipment Class &gt; Edit screen
+-&gt; done: EditEquipmentClassSteps.WhenClickSaveButtonOnDowntimeEquipmentClassEditScreen() (0.1s)
+Then the modification of Downtime &gt; Equipment Class &gt; Edit screen should be persistent
+-&gt; done: EditEquipmentClassSteps.ThenTheModificationOfDowntimeEquipmentClassEditScreenShouldBePersistent() (2.1s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cf6252e7-6e53-4bcb-a473-628d11910542" testId="bb21122b-de1c-ad9f-7b12-99f1488511b9" testName="EditEquipmentClass_Chute" computerName="BHPBIO-000228" duration="00:00:24.4112168" startTime="2017-03-21T16:18:01.7651835+08:00" endTime="2017-03-21T16:18:26.1836251+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf6252e7-6e53-4bcb-a473-628d11910542">
+      <Output>
+        <StdOut>Given Go to Downtime &gt; Equipment Class
+-&gt; done: EditEquipmentClassSteps.GivenGoGoDowntimeEquipmentClass() (2.6s)
+And Edit the following fields on Downtime &gt; Equipment Class &gt; Edit screen
+  --- table step argument ---
+  | EquipmentClassId | Tracked | PreEventAlarmInclusion | EventCreationDelay | NotificationDelay | PublishAutoClassification | PublishNonAutoClassification | Comment            |
+  | 6                | Yes     | 10                     | 30                 | 2                 | No                        | Yes                          | Automation Testing |
+-&gt; done: EditEquipmentClassSteps.GivenEditTheFollowingFieldsOnDowntimeEquipmentClassEditScreen(&lt;table&gt;) (1.5s)
+When Click Save button on Downtime &gt; Equipment Class &gt; Edit screen
+-&gt; done: EditEquipmentClassSteps.WhenClickSaveButtonOnDowntimeEquipmentClassEditScreen() (0.1s)
+Then the modification of Downtime &gt; Equipment Class &gt; Edit screen should be persistent
+-&gt; error: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</StdOut>
+        <ErrorInfo>
+          <Message>Test method MES.Portal.Tests.Features.Downtime.Feature_DowntimeFeature.EditEquipmentClass_Chute threw exception: 
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</Message>
+          <StackTrace>    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at System.Collections.ObjectModel.ReadOnlyCollection`1.get_Item(Int32 index)
+   at MES.Portal.Tests.Feature.Steps.Downtime.EditEquipmentClassSteps.ThenTheModificationOfDowntimeEquipmentClassEditScreenShouldBePersistent() in C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Tests\Feature.Steps\Downtime\EditEquipmentClassSteps.cs:line 106
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at MES.Portal.Tests.Features.Downtime.Feature_DowntimeFeature.ScenarioCleanup()
+   at MES.Portal.Tests.Features.Downtime.Feature_DowntimeFeature.EditEquipmentClass(String scenarioName, String equipmentClassId, String tracked, String preEventAlarmInclusion, String eventCreationDelay, String notificationDelay, String publishAutoClassification, String publishNonAutoClassification, String comment, String[] exampleTags) in C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Tests\Features\Downtime\Downtime.feature:line 9
+   at MES.Portal.Tests.Features.Downtime.Feature_DowntimeFeature.EditEquipmentClass_Chute()
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5a41a7b2-bd17-4315-866a-bc290212d5c3" testId="e200f348-02ff-6b41-4df3-7190917f3407" testName="EditTTRConfiguration_EquipmentId3349" computerName="BHPBIO-000228" duration="00:00:10.4730244" startTime="2017-03-21T16:18:26.1986266+08:00" endTime="2017-03-21T16:18:36.6796746+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a41a7b2-bd17-4315-866a-bc290212d5c3">
+      <Output>
+        <StdOut>Given Go to Maintenance &gt; TTR Configuration
+-&gt; done: EditTTRConfigurationSteps.GivenGoToMaintenance_TTRConfigurationEdit() (2.4s)
+And Edit below fields on Maintenance &gt; TTR configuration &gt; Edit screen
+  --- table step argument ---
+  | EquipmentId | RulePriority | Active | AssignmentDuration |
+  | 3349        | 96           | Yes    | 46                 |
+-&gt; done: EditTTRConfigurationSteps.GivenModifyBelowField(&lt;table&gt;) (2.2s)
+When Click Save button on Maintenance &gt; TTR configuration &gt; Edit screen
+-&gt; done: EditTTRConfigurationSteps.WhenClickSaveButton() (0.2s)
+Then the modification of Maintenance &gt; TTR configuration should be persistent
+-&gt; done: EditTTRConfigurationSteps.ThenTheModificationShouldBePersistent() (1.3s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f30e9412-3c7d-4299-860a-f0ca086a8343" testId="fd45758c-0558-4270-4fba-b5cbbca0f9e0" testName="EditTTRConfiguration_EquipmentId3350" computerName="BHPBIO-000228" duration="00:00:11.0587499" startTime="2017-03-21T16:18:36.6976764+08:00" endTime="2017-03-21T16:18:47.7647830+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f30e9412-3c7d-4299-860a-f0ca086a8343">
+      <Output>
+        <StdOut>Given Go to Maintenance &gt; TTR Configuration
+-&gt; done: EditTTRConfigurationSteps.GivenGoToMaintenance_TTRConfigurationEdit() (3.0s)
+And Edit below fields on Maintenance &gt; TTR configuration &gt; Edit screen
+  --- table step argument ---
+  | EquipmentId | RulePriority | Active | AssignmentDuration |
+  | 3350        | 98           | Yes    | 48                 |
+-&gt; done: EditTTRConfigurationSteps.GivenModifyBelowField(&lt;table&gt;) (2.5s)
+When Click Save button on Maintenance &gt; TTR configuration &gt; Edit screen
+-&gt; done: EditTTRConfigurationSteps.WhenClickSaveButton() (0.1s)
+Then the modification of Maintenance &gt; TTR configuration should be persistent
+-&gt; done: EditTTRConfigurationSteps.ThenTheModificationShouldBePersistent() (1.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fd037295-8201-4cf4-bfcf-89ea43c4fc59" testId="68eaa6c2-53b1-1a56-29f8-9a2389b54f96" testName="QueryEquipment_Port_CoreRoutes" computerName="BHPBIO-000228" duration="00:00:12.5819101" startTime="2017-03-21T16:18:47.7797845+08:00" endTime="2017-03-21T16:19:00.3660430+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd037295-8201-4cf4-bfcf-89ea43c4fc59">
+      <Output>
+        <StdOut>Given Go to Master Data &gt; Equipment
+-&gt; done: QueryMDMEquipmentSteps.GivenGoToMasterDataEquipment() (2.3s)
+When I choose one site and one class on Master Data &gt; Equipment screen
+  --- table step argument ---
+  | Site | Class       |
+  | Port | Core Routes |
+-&gt; done: QueryMDMEquipmentSteps.WhenIChooseOneSiteAndOneClassOnMasterDataEquipmentScreen(&lt;table&gt;) (5.3s)
+Then the result should be on Master Data &gt; Equipment screen
+-&gt; done: QueryMDMEquipmentSteps.ThenTheResultShouldBeOnMasterDataEquipmentScreen() (0.4s)
+And I should go to Master Data &gt; Equipment screen &gt; Detail screen
+-&gt; done: QueryMDMEquipmentSteps.ThenIShouldGoToMasterDataEquipmentScreenDetailScreen() (0.2s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="90330f7c-19c7-45a9-853d-e890bf998d2d" testId="06ead74c-f3bf-a442-9b3b-1c292137b7f0" testName="QueryEquipment_Port_OreProcessing" computerName="BHPBIO-000228" duration="00:00:13.2942666" startTime="2017-03-21T16:19:00.3830447+08:00" endTime="2017-03-21T16:19:13.6813744+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90330f7c-19c7-45a9-853d-e890bf998d2d">
+      <Output>
+        <StdOut>Given Go to Master Data &gt; Equipment
+-&gt; done: QueryMDMEquipmentSteps.GivenGoToMasterDataEquipment() (3.1s)
+When I choose one site and one class on Master Data &gt; Equipment screen
+  --- table step argument ---
+  | Site | Class          |
+  | Port | Ore Processing |
+-&gt; done: QueryMDMEquipmentSteps.WhenIChooseOneSiteAndOneClassOnMasterDataEquipmentScreen(&lt;table&gt;) (5.3s)
+Then the result should be on Master Data &gt; Equipment screen
+-&gt; done: QueryMDMEquipmentSteps.ThenTheResultShouldBeOnMasterDataEquipmentScreen() (0.2s)
+And I should go to Master Data &gt; Equipment screen &gt; Detail screen
+-&gt; done: QueryMDMEquipmentSteps.ThenIShouldGoToMasterDataEquipmentScreenDetailScreen() (0.2s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f38e7070-fe35-401e-af74-3c2d3fb4b951" testId="ccf76d01-f34c-b8ee-1374-cef82646d601" testName="Scheduling_CreateOpportuneMaintenance_AllRailTrack" computerName="BHPBIO-000228" duration="00:00:21.7735175" startTime="2017-03-21T16:19:13.6943757+08:00" endTime="2017-03-21T16:19:35.4775538+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f38e7070-fe35-401e-af74-3c2d3fb4b951">
+      <Output>
+        <StdOut>Given Go to Resource &gt; Scheduling &gt; Create Opportune Maintenance
+-&gt; done: CreateAssignmentSteps.GivenGoToResourceSchedulingCreateOpportuneMaintenance() (2.4s)
+And Input the following fields on Resource &gt; Scheduling &gt; Create Opportune Maintenance
+  --- table step argument ---
+  | EquipmentClassName | EquipmentClassId | ActivityName  | AssignmentType                      | ResourceCode          | StartTime        | EndTime          |
+  | all rail track     | RN.Track         | Activity Test | Opportune Maintenance (Placeholder) | Track - Track network | 20/03/2017 15:06 | 20/03/2017 16:06 |
+-&gt; error: no such element: Unable to locate element: {"method":"css selector","selector":"body &gt; mes-app &gt; div &gt; mes-resources-scheduling &gt; div.page-wrap.full-height &gt; div &gt; mes-dock &gt; div &gt; div:nth-child(1) &gt; div &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; select"}
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.1.7601 SP1 x86_64)
+When Click Save button on Resource &gt; Scheduling &gt; Create Opportune Maintenance
+-&gt; skipped because of previous errors
+Then the new Opportune Maintenance should be persistent
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method MES.Portal.Tests.Features.Resources.Feature_ResourceFeature.Scheduling_CreateOpportuneMaintenance_AllRailTrack threw exception: 
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"body &gt; mes-app &gt; div &gt; mes-resources-scheduling &gt; div.page-wrap.full-height &gt; div &gt; mes-dock &gt; div &gt; div:nth-child(1) &gt; div &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; select"}
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.1.7601 SP1 x86_64)</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClass1e.&lt;CssSelector&gt;b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at MES.Portal.Tests.Feature.Steps.Resources.CreateAssignmentSteps.GivenInputTheFollowingFieldsOnResourceSchedulingCreateOpportuneMaintenance(Table table) in C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Tests\Feature.Steps\Resources\CreateAssignmentSteps.cs:line 40
+   at lambda_method(Closure , IContextManager , Table )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at MES.Portal.Tests.Features.Resources.Feature_ResourceFeature.ScenarioCleanup()
+   at MES.Portal.Tests.Features.Resources.Feature_ResourceFeature.Scheduling_CreateOpportuneMaintenance(String scenarioName, String equipmentClassName, String equipmentClassId, String activityName, String assignmentType, String resourceCode, String startTime, String endTime, String[] exampleTags) in C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Tests\Features\Resources\CreateAssignment.feature:line 9
+   at MES.Portal.Tests.Features.Resources.Feature_ResourceFeature.Scheduling_CreateOpportuneMaintenance_AllRailTrack()
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="839bd11e-b3ef-402a-822e-dc4146b56624" testId="ee497598-c0f1-cec4-6b63-6e09787d2744" testName="Can_Goto_MaintenancePage" computerName="BHPBIO-000228" duration="00:00:06.8477623" startTime="2017-03-21T16:19:35.4965557+08:00" endTime="2017-03-21T16:19:42.3502410+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="839bd11e-b3ef-402a-822e-dc4146b56624">
+    </UnitTestResult>
+    <UnitTestResult executionId="52135989-9185-4ac9-b067-d8c6407b518e" testId="a2b536f5-6b74-6f53-ffe1-f88215e922ad" testName="Can_Goto_TTRConfigurationPage" computerName="BHPBIO-000228" duration="00:00:06.6995123" startTime="2017-03-21T16:19:42.3632423+08:00" endTime="2017-03-21T16:19:49.0679127+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52135989-9185-4ac9-b067-d8c6407b518e">
+    </UnitTestResult>
+    <UnitTestResult executionId="8ca7160f-60dd-40b2-925d-6b7e9986a557" testId="2fd3e29e-2308-7f15-6f9c-a7f317baad8b" testName="Can_Goto_TTROverrides" computerName="BHPBIO-000228" duration="00:00:06.7843558" startTime="2017-03-21T16:19:49.0859145+08:00" endTime="2017-03-21T16:19:55.8745933+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ca7160f-60dd-40b2-925d-6b7e9986a557">
+    </UnitTestResult>
+    <UnitTestResult executionId="f7f20e5b-855e-45b1-9d68-8d8974a71c52" testId="f4f1c008-8bf4-06d3-1aa0-bb0004922893" testName="Can_Goto_EquipmentPage" computerName="BHPBIO-000228" duration="00:00:06.9967839" startTime="2017-03-21T16:19:55.8905949+08:00" endTime="2017-03-21T16:20:02.8902948+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7f20e5b-855e-45b1-9d68-8d8974a71c52">
+    </UnitTestResult>
+    <UnitTestResult executionId="df2f9651-8344-40c0-9689-840c0cb7180b" testId="4b6942d5-7f10-a40e-b6a4-8b5c08421f35" testName="Can_Goto_MasterDataPage" computerName="BHPBIO-000228" duration="00:00:06.4279192" startTime="2017-03-21T16:20:02.9202978+08:00" endTime="2017-03-21T16:20:09.3569414+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df2f9651-8344-40c0-9689-840c0cb7180b">
+    </UnitTestResult>
+    <UnitTestResult executionId="d61ad432-571e-41e4-b3f0-6009c2847f56" testId="970e7fec-a19e-8405-3d5b-41ed3b2a08b8" testName="Can_Goto_IEOnlyPage" computerName="BHPBIO-000228" duration="00:00:07.4679761" startTime="2017-03-21T16:20:09.3719429+08:00" endTime="2017-03-21T16:20:16.8486905+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d61ad432-571e-41e4-b3f0-6009c2847f56">
+    </UnitTestResult>
+    <UnitTestResult executionId="7c122b0f-65ef-4da7-9a94-5444abc8acda" testId="d4652a46-4862-77ee-9fdc-1ec6eeb3dd7a" testName="Can_Goto_PlanningPage" computerName="BHPBIO-000228" duration="00:00:06.6452144" startTime="2017-03-21T16:20:16.8646921+08:00" endTime="2017-03-21T16:20:23.5163572+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c122b0f-65ef-4da7-9a94-5444abc8acda">
+    </UnitTestResult>
+    <UnitTestResult executionId="64e3b525-cadc-483f-b22a-2c70ef149897" testId="2324cc0f-00b3-c515-1301-62dc212f56b9" testName="Can_Goto_CrewingCoordinator" computerName="BHPBIO-000228" duration="00:00:06.5522734" startTime="2017-03-21T16:20:23.5363592+08:00" endTime="2017-03-21T16:20:30.0930148+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="64e3b525-cadc-483f-b22a-2c70ef149897">
+    </UnitTestResult>
+    <UnitTestResult executionId="bea1548e-266d-48cf-b43d-7e9a2c9d3255" testId="acf70753-e581-0dd9-cdc9-37b262a291e5" testName="Can_Goto_RailPage" computerName="BHPBIO-000228" duration="00:00:06.8268670" startTime="2017-03-21T16:20:30.1020157+08:00" endTime="2017-03-21T16:20:36.9346989+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bea1548e-266d-48cf-b43d-7e9a2c9d3255">
+    </UnitTestResult>
+    <UnitTestResult executionId="ba9e8c06-36a9-42b3-8c74-010623d071e5" testId="2a6e4995-29e8-eec4-b322-a4a801e2261e" testName="Can_Goto_TrainGraph" computerName="BHPBIO-000228" duration="00:00:10.4335548" startTime="2017-03-21T16:20:36.9477002+08:00" endTime="2017-03-21T16:20:47.3867440+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba9e8c06-36a9-42b3-8c74-010623d071e5">
+    </UnitTestResult>
+    <UnitTestResult executionId="b75fa1fb-8377-415d-95ab-a9e6dfce0f83" testId="33416784-3ee2-381c-035d-d4daf88ad226" testName="Can_Goto_AssignmentsPage" computerName="BHPBIO-000228" duration="00:00:07.5328083" startTime="2017-03-21T16:20:47.3967450+08:00" endTime="2017-03-21T16:20:54.9334986+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b75fa1fb-8377-415d-95ab-a9e6dfce0f83">
+    </UnitTestResult>
+    <UnitTestResult executionId="f801d2a2-f921-486d-b105-052965ad43e8" testId="b62e5130-99f6-f863-b30c-bcf983b8a281" testName="Can_Goto_ManagementPage" computerName="BHPBIO-000228" duration="00:00:06.9767882" startTime="2017-03-21T16:20:54.9414994+08:00" endTime="2017-03-21T16:21:01.9211973+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f801d2a2-f921-486d-b105-052965ad43e8">
+    </UnitTestResult>
+    <UnitTestResult executionId="481e42e9-a9fb-49e8-9352-8f57ccafa8c3" testId="f5f4a241-71fc-9638-48f2-59898c7f640c" testName="Can_Goto_PropertiesPage" computerName="BHPBIO-000228" duration="00:00:07.2817223" startTime="2017-03-21T16:21:01.9291981+08:00" endTime="2017-03-21T16:21:09.2169268+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="481e42e9-a9fb-49e8-9352-8f57ccafa8c3">
+    </UnitTestResult>
+    <UnitTestResult executionId="fb8aa0df-e305-474d-bc30-af6862faa43f" testId="a3a58970-c5d3-644f-b44c-f8e2fa54dc8a" testName="Can_Goto_ResourcesPage" computerName="BHPBIO-000228" duration="00:00:06.9744294" startTime="2017-03-21T16:21:09.2269278+08:00" endTime="2017-03-21T16:21:16.2066257+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb8aa0df-e305-474d-bc30-af6862faa43f">
+    </UnitTestResult>
+    <UnitTestResult executionId="deb9cec7-3eb6-413d-be1f-c5ce22912970" testId="b472f8aa-4efa-8de5-f59f-c016cdeebe07" testName="Can_Goto_SchedulingPage" computerName="BHPBIO-000228" duration="00:00:23.0655377" startTime="2017-03-21T16:21:16.2206271+08:00" endTime="2017-03-21T16:21:39.2929341+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="deb9cec7-3eb6-413d-be1f-c5ce22912970">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MES.Portal.Tests.ResourcesTests.Can_Goto_SchedulingPage threw exception: 
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"mes-breadcrumbs li:nth-child(2) &gt; span"}
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.1.7601 SP1 x86_64)</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClass1e.&lt;CssSelector&gt;b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at MES.Portal.Test.Framework.Resources.SchedulingPage.IsAt() in C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Test.Framework\Resources\SchedulingPage.cs:line 16
+   at MES.Portal.Tests.ResourcesTests.Can_Goto_SchedulingPage() in C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Tests\Resources.Tests\ResourcesTests.cs:line 74
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

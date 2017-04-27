@@ -1,0 +1,44 @@
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\MES.Portal.TestFramework.dll
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\MES.Portal.TestFramework.pdb
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\ThoughtWorks.Selenium.Core.dll
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\WebDriver.dll
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\WebDriver.Support.dll
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\Selenium.WebDriverBackedSelenium.pdb
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\Selenium.WebDriverBackedSelenium.xml
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\ThoughtWorks.Selenium.Core.pdb
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\ThoughtWorks.Selenium.Core.xml
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\WebDriver.xml
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\WebDriver.Support.xml
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\obj\Debug\MES.Portal.TestFramework.dll
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\obj\Debug\MES.Portal.TestFramework.pdb
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\EPPlus.dll
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\EPPlus.xml
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\Newtonsoft.Json.dll
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\Newtonsoft.Json.xml
+C:\Workspace\CSharp\MES Portal Test\MES Portal Test\bin\Debug\MES.Portal.TestFramework.dll.config
+C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\MES.Portal.Test.Framework.dll
+C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\MES.Portal.Test.Framework.pdb
+C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\ExpectedObjects.dll
+C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\Newtonsoft.Json.dll
+C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\WebDriver.dll
+C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\WebDriver.Support.dll
+C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\Newtonsoft.Json.xml
+C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\WebDriver.xml
+C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\WebDriver.Support.xml
+C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Test.Framework\obj\Debug\MES.Portal.Test.Framework.dll
+C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Test.Framework\obj\Debug\MES.Portal.Test.Framework.pdb
+C:\Workspace\CSharp\MES.Portal.Tests\MES.Portal.Test.Framework\obj\Debug\MES.Portal.Test.Framework.csprojResolveAssemblyReference.cache
+C:\tfs\Repos\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\MES.Portal.Test.Framework.dll
+C:\tfs\Repos\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\MES.Portal.Test.Framework.pdb
+C:\tfs\Repos\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\ExpectedObjects.dll
+C:\tfs\Repos\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\tfs\Repos\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\Newtonsoft.Json.dll
+C:\tfs\Repos\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\WebDriver.dll
+C:\tfs\Repos\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\WebDriver.Support.dll
+C:\tfs\Repos\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\Newtonsoft.Json.xml
+C:\tfs\Repos\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\WebDriver.xml
+C:\tfs\Repos\MES.Portal.Tests\MES.Portal.Test.Framework\bin\Debug\WebDriver.Support.xml
+C:\tfs\Repos\MES.Portal.Tests\MES.Portal.Test.Framework\obj\Debug\MES.Portal.Test.Framework.dll
+C:\tfs\Repos\MES.Portal.Tests\MES.Portal.Test.Framework\obj\Debug\MES.Portal.Test.Framework.pdb

@@ -1,0 +1,14 @@
+C:\Workspace\CSharp\MES Portal Test\Test Project\bin\Debug\Test Project.dll
+C:\Workspace\CSharp\MES Portal Test\Test Project\bin\Debug\Test Project.pdb
+C:\Workspace\CSharp\MES Portal Test\Test Project\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Workspace\CSharp\MES Portal Test\Test Project\obj\Debug\Test Project.csprojResolveAssemblyReference.cache
+C:\Workspace\CSharp\MES Portal Test\Test Project\obj\Debug\Test Project.dll
+C:\Workspace\CSharp\MES Portal Test\Test Project\obj\Debug\Test Project.pdb
+C:\Workspace\CSharp\MES Portal Test\Test Project\bin\Debug\MES Portal Test.dll
+C:\Workspace\CSharp\MES Portal Test\Test Project\bin\Debug\WebDriver.dll
+C:\Workspace\CSharp\MES Portal Test\Test Project\bin\Debug\WebDriver.Support.dll
+C:\Workspace\CSharp\MES Portal Test\Test Project\bin\Debug\MES Portal Test.pdb
+C:\Workspace\CSharp\MES Portal Test\Test Project\bin\Debug\WebDriver.pdb
+C:\Workspace\CSharp\MES Portal Test\Test Project\bin\Debug\WebDriver.xml
+C:\Workspace\CSharp\MES Portal Test\Test Project\bin\Debug\WebDriver.Support.pdb
+C:\Workspace\CSharp\MES Portal Test\Test Project\bin\Debug\WebDriver.Support.xml
