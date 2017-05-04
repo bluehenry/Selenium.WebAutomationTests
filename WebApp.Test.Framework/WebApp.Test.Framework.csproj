@@ -58,12 +58,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\DateHelper.cs" />
-    <Compile Include="Common\SQLClientHelper.cs" />
     <Compile Include="GooglePage\GooglePage.cs" />
     <Compile Include="Selenium\Browser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Selenium\SeleniumHelper.cs" />
+    <Compile Include="Support\Common\DateHelper.cs" />
+    <Compile Include="Support\DB\SQLClientHelper.cs" />
+    <Compile Include="Support\Security\EncrytpDecrypt.cs" />
+    <Compile Include="Support\TestEnvironment.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

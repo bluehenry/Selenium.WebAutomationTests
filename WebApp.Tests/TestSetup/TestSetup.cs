@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WebApp.Test.Framework;
+using WebApp.Test.Framework.Support;
 
 namespace WebApp.Tests.TestSetup
 {
@@ -10,6 +11,7 @@ namespace WebApp.Tests.TestSetup
         [AssemblyInitialize()]
         public static void AssemblyInit(TestContext context)
         {
+            TestEnvironment.Initialize();
             Browser.Initialize();
         }
 

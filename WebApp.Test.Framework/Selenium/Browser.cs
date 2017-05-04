@@ -4,6 +4,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Chrome;
 using System.Diagnostics;
+using WebApp.Test.Framework.Support;
 
 namespace WebApp.Test.Framework
 {
@@ -23,10 +24,10 @@ namespace WebApp.Test.Framework
                 string driverPath = "";
 
                 // Read from App.config
-                baseUrl = ConfigurationManager.AppSettings["BaseUrl"];
+                baseUrl = TestEnvironment.BaseUrl;
                 strBrowserType = ConfigurationManager.AppSettings["BrowserType"];
                 driverPath = ConfigurationManager.AppSettings["BrowerDriverPath"];
-                
+
                 browserType = strBrowserType;
 
                 if (browserType.Equals("IE"))
