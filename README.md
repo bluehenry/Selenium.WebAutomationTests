@@ -1,6 +1,6 @@
 # WebAppAutomationTests
 
-WebAppAutomationTests is a Selenium, C#, SpecFlow Web application test framework. 
+WebAppAutomationTests is a [Selenium], C#, [SpecFlow] Web application test framework. 
 
 # Features
  - Decouple Selenium test framework and business logical.
