@@ -75,16 +75,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Feature.Steps\ScenarioBackground\ScenarioBackground.cs" />
-    <Compile Include="Feature.Steps\TestSetup\TestSetup.cs" />
-    <Compile Include="Feature.Steps\Google\GoogleStepsParameters.cs" />
-    <Compile Include="Feature.Steps\Google\GoogleSteps.cs" />
-    <Compile Include="Features\Google\Google.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Google.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Google.Tests\Google.cs" />
+    <Compile Include="WebSite.Tests\WebSiteTests.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -97,10 +88,6 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Features\Google\Google.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Google.feature.cs</LastGenOutput>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -111,6 +98,10 @@
     <ProjectReference Include="..\WebApp.Test.Framework\WebApp.Test.Framework.csproj">
       <Project>{6519288e-a590-448c-9844-38879d789f50}</Project>
       <Name>WebApp.Test.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebSite.Pages.Selenium\WebSite.Pages.Selenium.csproj">
+      <Project>{5e9823a2-4300-4944-869d-f6a68a663d68}</Project>
+      <Name>WebSite.Pages.Selenium</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

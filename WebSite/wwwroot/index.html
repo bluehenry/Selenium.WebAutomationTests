@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Web Application Automation Test</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    <style>
+      form { padding: 50px; }
+      h1 { text-align: center }
+      h2 { text-align: center }
+    </style>
+  <body>
+  <h1>Selenium test framework</h1>
+  <div class="row">
+    <div class="col-md-4">
+      
+      <form>
+        <h2>Basic form example</h2>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" id="exampleInputFile">         
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default" id="Submit" onclick="return onClickFunction()">Submit</button>
+        <hr>
+        <p id="message"></p>
+      </form>
+    </div>
+
+    <div class="col-md-4">
+      <form>
+        <h2>Checkboxes and radios</h2>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"  name="checkbox" id = "checkBox2">
+            Australia
+          </label>
+        </div>
+        <div class="checkbox disabled">
+          <label>
+            <input type="checkbox" name="checkbox" id = "checkBox2">
+            New Zealand
+          </label>
+        </div>
+
+        <hr>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="NSW" checked>
+            New South Wales
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="Queensland">
+            Queensland
+          </label>
+        </div>
+        <div class="radio disabled">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="WA">
+            Western Australia
+          </label>
+        </div>
+      </form>
+    </div>
+
+
+    <div class="col-md-4">
+      <form>
+        <h2>Selects</h2>
+        <select class="form-control">
+          <option value="Brisbane">Brisbane</option>
+          <option value="Melbourne">Melbourne</option>
+          <option value="Perth">Perth</option>
+          <option value="Sydney">Sydney</option>          
+        </select>
+      </form>
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>    
+    <script>
+      function onClickFunction() {
+          document.getElementById("message").innerHTML = "Submit button was clicked.";
+          return false          
+      }
+    </script>
+  </body>
+</html>
