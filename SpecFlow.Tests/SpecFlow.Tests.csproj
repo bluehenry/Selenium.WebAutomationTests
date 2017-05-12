@@ -69,9 +69,9 @@
     <Compile Include="Feature.Steps\ScenarioBackground\ScenarioBackground.cs" />
     <Compile Include="Feature.Steps\TestSetup\TestSetup.cs" />
     <Compile Include="Features\HomePage.feature.cs">
-      <DependentUpon>HomePage.feature</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>HomePage.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

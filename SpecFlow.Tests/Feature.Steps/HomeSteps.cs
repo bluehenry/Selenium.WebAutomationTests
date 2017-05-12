@@ -3,7 +3,6 @@ using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 using OpenQA.Selenium;
 using WebApp.Test.Framework;
-using WebApp.Test.Framework.GooglePage;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace WebApp.Tests.Feature.Steps.Google
@@ -11,18 +10,18 @@ namespace WebApp.Tests.Feature.Steps.Google
     [Binding]
     class EditTTRConfigurationSteps
     {   
-        IEnumerable<GoogleStepsParameters> googleStepsParameters;
+        //IEnumerable<GoogleStepsParameters> googleStepsParameters;
 
-        [Given(@"I input the following words")]
-        public void GivenIInputTheFollowingWords(Table table)
-        {
-            IEnumerable<GoogleStepsParameters> googleStepsParameters = table.CreateSet<GoogleStepsParameters>();
+        //[Given(@"I input the following words")]
+        //public void GivenIInputTheFollowingWords(Table table)
+        //{
+        //    IEnumerable<GoogleStepsParameters> googleStepsParameters = table.CreateSet<GoogleStepsParameters>();
 
-            foreach (var parameters in googleStepsParameters)
-            {
-                Browser.webDriver.FindElement(By.CssSelector("#lst-ib")).SendKeys(parameters.KeyWord);
-            }
-        }
+        //    foreach (var parameters in googleStepsParameters)
+        //    {
+        //        Browser.webDriver.FindElement(By.CssSelector("#lst-ib")).SendKeys(parameters.KeyWord);
+        //    }
+        //}
 
         [When(@"I click search button")]
         public void WhenIClickSearchButton()
