@@ -50,6 +50,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="TechTalk.SpecFlow, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
       <HintPath>..\packages\SpecFlow.2.1.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
     </Reference>
@@ -64,14 +65,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Feature.Steps\HomeSteps.cs" />
-    <Compile Include="Feature.Steps\HomeStepsParameters.cs" />
+    <Compile Include="Feature.Steps\HomePage\HomePageSteps.cs" />
+    <Compile Include="Feature.Steps\HomePage\HomePageStepsParameters.cs" />
     <Compile Include="Feature.Steps\ScenarioBackground\ScenarioBackground.cs" />
     <Compile Include="Feature.Steps\TestSetup\TestSetup.cs" />
     <Compile Include="Features\HomePage.feature.cs">
-      <DependentUpon>HomePage.feature</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>HomePage.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -98,15 +99,12 @@
       <Project>{6519288e-a590-448c-9844-38879d789f50}</Project>
       <Name>WebApp.Test.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WebSite.Pages.Selenium\WebSite.Pages.Selenium.csproj">
+    <ProjectReference Include="..\WebSite.Pages.Selenium\WebSite.Biz.csproj">
       <Project>{5e9823a2-4300-4944-869d-f6a68a663d68}</Project>
-      <Name>WebSite.Pages.Selenium</Name>
+      <Name>WebSite.Biz</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Content Include="TestData\UploadFileA.txt" />
-  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

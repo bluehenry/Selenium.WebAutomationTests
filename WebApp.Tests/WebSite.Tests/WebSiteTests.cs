@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WebApp.Test.Framework;
-using WebSite.Pages.Selenium;
+using WebSite.Biz;
 
 namespace WebApp.Tests
 {    
@@ -20,6 +20,14 @@ namespace WebApp.Tests
         {
             homePage.GoTo();            
             Assert.IsTrue(homePage.IsAt());
+        }
+
+
+        [TestMethod]
+        public void Can_Select()
+        {
+            homePage.GoTo();
+            homePage.Select();
         }
 
     }

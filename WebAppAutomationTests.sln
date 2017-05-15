@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlow.Tests", "SpecFlow.
 		{5E9823A2-4300-4944-869D-F6A68A663D68} = {5E9823A2-4300-4944-869D-F6A68A663D68}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite.Pages.Selenium", "WebSite.Pages.Selenium\WebSite.Pages.Selenium.csproj", "{5E9823A2-4300-4944-869D-F6A68A663D68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite.Biz", "WebSite.Pages.Selenium\WebSite.Biz.csproj", "{5E9823A2-4300-4944-869D-F6A68A663D68}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6519288E-A590-448C-9844-38879D789F50} = {6519288E-A590-448C-9844-38879D789F50}
 	EndProjectSection

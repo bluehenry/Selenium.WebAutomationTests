@@ -71,7 +71,7 @@ namespace WebApp.Test.Framework
                 }
                 else
                 {
-                    throw new System.ArgumentException("The browser type " + browserType + " is not supported");
+                    throw new System.ArgumentException($"The browser type {browserType} is not supported");
                 }
             }
         }

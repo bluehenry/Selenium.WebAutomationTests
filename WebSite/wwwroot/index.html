@@ -31,11 +31,11 @@
         <h2>Basic form example</h2>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
         </div>
         <div class="form-group">
           <label for="exampleInputFile">File input</label>
@@ -57,11 +57,11 @@
         <h2>Checkboxes and radios</h2>
         <div class="checkbox">
           <label>
-            <input type="checkbox"  name="checkbox" id = "checkBox2">
+            <input type="checkbox"  name="checkbox" id = "checkBox1">
             Australia
           </label>
         </div>
-        <div class="checkbox disabled">
+        <div class="checkbox">
           <label>
             <input type="checkbox" name="checkbox" id = "checkBox2">
             New Zealand
@@ -82,7 +82,7 @@
             Queensland
           </label>
         </div>
-        <div class="radio disabled">
+        <div class="radio">
           <label>
             <input type="radio" name="optionsRadios" id="optionsRadios3" value="WA">
             Western Australia
@@ -95,6 +95,7 @@
     <div class="col-md-4">
       <form>
         <h2>Selects</h2>
+        <label>City</label>
         <select class="form-control">
           <option value="Brisbane">Brisbane</option>
           <option value="Melbourne">Melbourne</option>
@@ -110,7 +111,7 @@
     <script src="dist/js/bootstrap.min.js"></script>    
     <script>
       function onClickFunction() {
-          document.getElementById("message").innerHTML = "Submit button was clicked.";
+          document.getElementById("message").innerHTML = "Your input is saved successfully.";
           return false          
       }
     </script>

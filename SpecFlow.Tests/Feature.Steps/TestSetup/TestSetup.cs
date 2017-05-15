@@ -1,6 +1,7 @@
 ﻿using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 using WebApp.Test.Framework;
+using WebApp.Test.Framework.Support;
 
 namespace WebApp.Tests.Feature.Steps
 {
@@ -10,8 +11,8 @@ namespace WebApp.Tests.Feature.Steps
         [BeforeFeature]
         public static void BeforeFeature()
         {
+            TestEnvironment.Initialize();
             Browser.Initialize();
-
         }
 
         [AfterFeature]

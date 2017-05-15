@@ -1,6 +1,6 @@
 ﻿using TechTalk.SpecFlow;
 using WebApp.Test.Framework;
-using WebSite.Pages.Selenium;
+using WebSite.Biz;
 
 
 namespace WebApp.Tests.Feature.Steps.ScenarioBackground
@@ -11,8 +11,9 @@ namespace WebApp.Tests.Feature.Steps.ScenarioBackground
         [Given(@"I open up home page")]
         public void GivenGoToGoogle()
         {
-            HomePage indexPage = new HomePage();
-            indexPage.GoTo();
+            HomePage homePage = new HomePage();
+            homePage.GoTo();
         }
+        
     }
 }
