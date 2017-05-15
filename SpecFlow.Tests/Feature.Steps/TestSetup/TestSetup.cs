@@ -10,8 +10,7 @@ namespace WebApp.Tests.Feature.Steps
     {
         [BeforeFeature]
         public static void BeforeFeature()
-        {
-            TestEnvironment.Initialize();
+        {   
             Browser.Initialize();
         }
 

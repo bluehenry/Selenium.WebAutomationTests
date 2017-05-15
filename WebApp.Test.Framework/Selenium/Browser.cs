@@ -19,12 +19,15 @@ namespace WebApp.Test.Framework
         public static void Initialize()
         {
             if ( webDriver == null )
-            { 
+            {
+                TestEnvironment.Initialize();
+
                 string strBrowserType = "";
                 string driverPath = "";
+                                
+                baseUrl = TestEnvironment.BaseUrl;
 
                 // Read from App.config
-                baseUrl = TestEnvironment.BaseUrl;
                 strBrowserType = ConfigurationManager.AppSettings["BrowserType"];
                 driverPath = ConfigurationManager.AppSettings["BrowerDriverPath"];
 
