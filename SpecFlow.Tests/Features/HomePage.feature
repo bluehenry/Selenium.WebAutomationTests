@@ -11,5 +11,10 @@ Scenario Outline: Input and submit form
 	Then The result should be saved successfully
 
 	Examples: 
+<<<<<<< HEAD
 	| ScenarioName | EmailAddress          | Password | FilePath         | CheckMeOut |
 	| Scenario_1   | jijun.henry@gmail.com | passw0rd | C:\temp\test.txt | Yes        |
+=======
+	| ScenarioName | EmailAddress          | Password | FilePath                   | CheckMeOut |
+	| Scenario_1   | jijun.henry@gmail.com | passw0rd | .\TestData\UploadFIleA.txt | yes        |
+>>>>>>> aec85923b52f64e850b84adda97470bfd6cad95c

@@ -18,7 +18,11 @@ namespace SpecFlow.Tests.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
+<<<<<<< HEAD
     public partial class HomePageFeature
+=======
+    public partial class GoogleSearchFeature
+>>>>>>> aec85923b52f64e850b84adda97470bfd6cad95c
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -30,7 +34,11 @@ namespace SpecFlow.Tests.Features
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
+<<<<<<< HEAD
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Home Page", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+=======
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Google Search", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+>>>>>>> aec85923b52f64e850b84adda97470bfd6cad95c
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -45,9 +53,15 @@ namespace SpecFlow.Tests.Features
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
+<<<<<<< HEAD
                         && (testRunner.FeatureContext.FeatureInfo.Title != "Home Page")))
             {
                 SpecFlow.Tests.Features.HomePageFeature.FeatureSetup(null);
+=======
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "Google Search")))
+            {
+                SpecFlow.Tests.Features.GoogleSearchFeature.FeatureSetup(null);
+>>>>>>> aec85923b52f64e850b84adda97470bfd6cad95c
             }
         }
         
@@ -75,9 +89,15 @@ namespace SpecFlow.Tests.Features
 #line hidden
         }
         
+<<<<<<< HEAD
         public virtual void InputAndSubmitForm(string scenarioName, string emailAddress, string password, string filePath, string checkMeOut, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Input and submit form", exampleTags);
+=======
+        public virtual void SubmitForm(string scenarioName, string emailAddress, string password, string filePath, string checkMeOut, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Submit form", exampleTags);
+>>>>>>> aec85923b52f64e850b84adda97470bfd6cad95c
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 3
@@ -98,23 +118,40 @@ this.FeatureBackground();
 #line 10
  testRunner.When("I click submit button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11
+<<<<<<< HEAD
  testRunner.Then("The result should be saved successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+=======
+ testRunner.Then("The result should show", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+>>>>>>> aec85923b52f64e850b84adda97470bfd6cad95c
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+<<<<<<< HEAD
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Input and submit form: Scenario_1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Home Page")]
+=======
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Submit form: Scenario_1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Google Search")]
+>>>>>>> aec85923b52f64e850b84adda97470bfd6cad95c
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Scenario_1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ScenarioName", "Scenario_1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:EmailAddress", "jijun.henry@gmail.com")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Password", "passw0rd")]
+<<<<<<< HEAD
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:FilePath", "C:\\temp\\test.txt")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CheckMeOut", "Yes")]
         public virtual void InputAndSubmitForm_Scenario_1()
         {
             this.InputAndSubmitForm("Scenario_1", "jijun.henry@gmail.com", "passw0rd", "C:\\temp\\test.txt", "Yes", ((string[])(null)));
+=======
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:FilePath", ".\\TestData\\UploadFIleA.txt")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:CheckMeOut", "yes")]
+        public virtual void SubmitForm_Scenario_1()
+        {
+            this.SubmitForm("Scenario_1", "jijun.henry@gmail.com", "passw0rd", ".\\TestData\\UploadFIleA.txt", "yes", ((string[])(null)));
+>>>>>>> aec85923b52f64e850b84adda97470bfd6cad95c
 #line hidden
         }
     }
