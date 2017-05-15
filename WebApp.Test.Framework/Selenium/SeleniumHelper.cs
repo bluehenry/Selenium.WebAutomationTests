@@ -15,7 +15,7 @@ namespace WebApp.Test.Framework.Selenium
 
         public static void ForceClick(IWebElement element)
         {
-            if (Browser.browserType.Equals("Chrome"))
+            if (Browser.BrowserType.Equals("Chrome"))
             {
                 element.Click();
             }

@@ -11,7 +11,6 @@ namespace WebApp.Tests.TestSetup
         [AssemblyInitialize()]
         public static void AssemblyInit(TestContext context)
         {
-            TestEnvironment.Initialize();
             Browser.Initialize();
         }
 

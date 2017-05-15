@@ -36,7 +36,7 @@ namespace SpecFlow.Tests
 
 
                 IWebElement filePath = Browser.webDriver.FindElement(By.CssSelector("#exampleInputFile"));
-                if (Browser.browserType.Equals("Chrome"))
+                if (Browser.BrowserType.Equals("Chrome"))
                 {
                     filePath.SendKeys(parameters.FilePath);
                 }

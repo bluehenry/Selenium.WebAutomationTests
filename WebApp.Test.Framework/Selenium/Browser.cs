@@ -9,12 +9,16 @@ using WebApp.Test.Framework.Support;
 namespace WebApp.Test.Framework
 {
     public static class Browser
-    {   
-        public static IWebDriver webDriver { get; set; }
+    {
+        public static IWebDriver webDriver;
 
         public static string baseUrl { get; set; }
 
-        public static string browserType { get; set; }
+        private static string browserType;
+        public static string BrowserType
+        {
+            get { return BrowserType; }
+        }
 
         public static void Initialize()
         {

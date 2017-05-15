@@ -6,41 +6,62 @@ namespace WebApp.Test.Framework.Support
 {
     public static class TestEnvironment
     {
-        public static string TestEnv { get; set; }
-        public static string BaseUrl { get; set; }
-        public static string DBConnectionString { get; set; }
-        public static string UserName { get; set; }
-        public static string Password { get; set; }
+        private static string baseUrl;
+        public static string BaseUrl
+        {
+            get { return baseUrl; }
+        }
+
+        private static string dbConnectionString;
+        public static string DBConnectionString
+        {
+            get { return dbConnectionString; }
+        }
+
+        private static string userName;
+        public static string UserName
+        {
+            get { return userName; }
+        }
+
+        private static string password;
+        public static string Password
+        {
+            get { return password; }
+        }
+
         public static void Initialize()
         {
-            TestEnv = ConfigurationManager.AppSettings["TestEnvironment"];
+            string testEnv;
 
-            if (TestEnv.Equals("Dev"))
+            testEnv = ConfigurationManager.AppSettings["TestEnvironment"];
+
+            if (testEnv.Equals("Dev"))
             {
-                BaseUrl = ConfigurationManager.AppSettings["Dev_BaseUrl"];
-                DBConnectionString = ConfigurationManager.AppSettings["Dev_DBConnectString"];
+                baseUrl = ConfigurationManager.AppSettings["Dev_BaseUrl"];
+                dbConnectionString = ConfigurationManager.AppSettings["Dev_DBConnectString"];
             }
-            else if (TestEnv.Equals("Test"))
+            else if (testEnv.Equals("Test"))
             {
-                BaseUrl = ConfigurationManager.AppSettings["Test_BaseUrl"];
-                DBConnectionString = ConfigurationManager.AppSettings["Test_DBConnectString"];
+                baseUrl = ConfigurationManager.AppSettings["Test_BaseUrl"];
+                dbConnectionString = ConfigurationManager.AppSettings["Test_DBConnectString"];
             }
-            else if (TestEnv.Equals("QA"))
+            else if (testEnv.Equals("QA"))
             {
-                BaseUrl = ConfigurationManager.AppSettings["QA_BaseUrl"];
-                DBConnectionString = ConfigurationManager.AppSettings["QA_DBConnectString"];
+                baseUrl = ConfigurationManager.AppSettings["QA_BaseUrl"];
+                dbConnectionString = ConfigurationManager.AppSettings["QA_DBConnectString"];
             }
             else
             {
                 throw new ArgumentException();
             }
 
-            //UserName = ConfigurationManager.AppSettings["UserName"];
+            //userName = ConfigurationManager.AppSettings["UserName"];
             //string encryptedPassword = ConfigurationManager.AppSettings["Password"];
 
             //string key = ConfigurationManager.AppSettings["EncryptionKey"];
 
-            //Password = EncrytpDecrypt.Decrypt(encryptedPassword, key);
+            //password = EncrytpDecrypt.Decrypt(encryptedPassword, key);
         }
 
     }
