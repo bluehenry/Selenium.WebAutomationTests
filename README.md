@@ -20,12 +20,17 @@ Most of time, Selenium is quite straightforward: Find an element and perform an 
  - Pop-up window
  
 # Deal with AJAX
- - Wait within a time frame.
+ 1. Wait within a time frame.
+ 
 	System.Threading.Thread.Sleep(10000);
- - Explicit waits until time out.
+	
+ 2. Explicit waits until time out.
+	
 	WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 	wait.Until(d => d.FindElement(By.Id("receiptNo")) );
- - Implicit waits until time out
+	
+ 3. Implicit waits until time out
+ 
     webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
 
 
