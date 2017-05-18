@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>WebSite</id>
+    <version>1.0.0.0</version>
+    <authors>jijuh9</authors>
+    <owners>jijuh9</owners>
+    <tags>OctopusDeploy</tags>
+    <licenseUrl>http://example.com</licenseUrl>
+    <projectUrl>http://example.com</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The WebSite deployment package, built on 18/05/2017</description>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="C:\Workspace\github\WebAppAutomationTests\WebSite\Web.config" target="Web.config" />
+	<file src="C:\Workspace\github\WebAppAutomationTests\WebSite\bin\**" target="bin" />
+    <file src="C:\Workspace\github\WebAppAutomationTests\WebSite\wwwroot\**" target="wwwroot" />
+  </files>
+</package>
