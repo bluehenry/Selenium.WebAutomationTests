@@ -19,7 +19,7 @@ Most of time, Selenium is quite straightforward: Find an element and perform an 
  - Select list 
  - Pop-up window
  
-# Deal with AJAX
+# Deal with AJAX or waiting a page loaded
  1. Wait within a time frame.
  
 	System.Threading.Thread.Sleep(10000);
