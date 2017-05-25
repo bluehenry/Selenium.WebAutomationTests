@@ -99,7 +99,7 @@
       <Project>{6519288e-a590-448c-9844-38879d789f50}</Project>
       <Name>WebApp.Test.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WebSite.Pages.Selenium\WebSite.Biz.csproj">
+    <ProjectReference Include="..\WebSite.Biz\WebSite.Biz.csproj">
       <Project>{5e9823a2-4300-4944-869d-f6a68a663d68}</Project>
       <Name>WebSite.Biz</Name>
     </ProjectReference>

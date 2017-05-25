@@ -30,5 +30,13 @@ namespace WebApp.Tests
             homePage.Select();
         }
 
+        [TestMethod]
+        public void Can_UploadFile()
+        {
+            homePage.GoTo();
+
+            string filePath = @"C:\temp\test.txt";
+            homePage.Uploadfile(filePath);
+        }
     }
 }

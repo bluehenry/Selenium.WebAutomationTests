@@ -1,12 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WebApp.Test.Framework;
-
+using System.Windows.Forms;
 
 namespace WebSite.Biz
 {
@@ -38,6 +33,24 @@ namespace WebSite.Biz
             SelectElement select = new SelectElement(element);
             select.SelectByText("Perth"); 
 
+        }
+
+        public void Uploadfile(string filePath)
+        {
+            IWebElement fileSelect = Browser.webDriver.FindElement(By.CssSelector("#fileselect"));
+            if (Browser.BrowserType.Equals("Chrome"))
+            {
+                fileSelect.SendKeys(filePath);
+            }
+            else
+            {
+                // Choose File element is different on IE comparing with Chrome.
+                fileSelect.Click();
+                System.Threading.Thread.Sleep(5000);
+                SendKeys.SendWait(filePath);
+                System.Threading.Thread.Sleep(1000);
+                SendKeys.SendWait(OpenQA.Selenium.Keys.Enter);
+            }
         }
     }
 }

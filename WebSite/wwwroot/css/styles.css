@@ -1,0 +1,42 @@
+/*
+ * Styles for Web Application Automation Test
+ */
+
+h1 
+{ 
+    text-align: center 
+}
+
+h2 
+{ 
+    text-align: center 
+}
+
+form 
+{ 
+    padding: 50px; 
+}
+
+#filedrag
+{
+    font-weight: bold;
+    text-align: center;
+    padding: 1em 0;
+    margin: 1em 0;
+    color: #555;
+    border: 2px dashed #555;
+    border-radius: 7px;
+    cursor: default;
+}
+
+#filedrag.hover
+{
+    color: #1d92c4;
+    border-color: #1d92c4;
+    border-style: solid;
+    box-shadow: inset 0 3px 4px #888;
+}
+
+.fileUpload {
+    opacity: 0;
+}

@@ -17,7 +17,7 @@ namespace WebApp.Test.Framework
         private static string browserType;
         public static string BrowserType
         {
-            get { return BrowserType; }
+            get { return browserType; }
         }
 
         public static void Initialize()
