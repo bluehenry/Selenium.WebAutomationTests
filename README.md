@@ -18,6 +18,7 @@ Most of time, Selenium is quite straightforward: Find an element and perform an 
  - Check list
  - Select list 
  - Pop-up window
+ - Drag and drop file to import
  
 # Deal with AJAX or waiting a page loaded
  1. Wait within a time frame.
