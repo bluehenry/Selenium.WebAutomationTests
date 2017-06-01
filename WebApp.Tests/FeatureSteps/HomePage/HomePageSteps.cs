@@ -1,26 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 using OpenQA.Selenium;
 using WebApp.Test.Framework.Selenium;
-using System.Windows.Forms;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 
-namespace SpecFlow.Tests
+namespace WebApp.Tests.FeatureSteps
 {
     [Binding]
     class HomePageSteps
     {   
-        IEnumerable<HomePageStepsParameters> homePageStepsParameters;
+        private IEnumerable<HomePageStepsParameters> _homePageStepsParameters;
 
         [Given(@"I input the following information")]
         public void GivenIInputTheFollowingWords(Table table)
         {
-            homePageStepsParameters = table.CreateSet<HomePageStepsParameters>();
+            _homePageStepsParameters = table.CreateSet<HomePageStepsParameters>();
 
-            foreach (var parameters in homePageStepsParameters)
+            foreach (var parameters in _homePageStepsParameters)
             {
                 // Select element with id
                 IWebElement emailAddress = Browser.WebDriver.FindElement(By.CssSelector("#exampleInputEmail"));

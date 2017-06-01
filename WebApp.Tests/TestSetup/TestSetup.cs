@@ -1,7 +1,5 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WebApp.Test.Framework;
-using WebApp.Test.Framework.Support;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using WebApp.Test.Framework.Selenium;
 
 namespace WebApp.Tests.TestSetup
 {
@@ -17,7 +15,7 @@ namespace WebApp.Tests.TestSetup
         [AssemblyCleanup()]
         public static void AssemblyCleanup()
         {
-            if (Browser.webDriver != null)
+            if (Browser.WebDriver != null)
             {
                Browser.Quit();
             }

@@ -6,62 +6,53 @@ namespace WebApp.Test.Framework.Support
 {
     public static class TestEnvironment
     {
-        private static string baseUrl;
-        public static string BaseUrl
-        {
-            get { return baseUrl; }
-        }
+        private static string _baseUrl;
+        public static string BaseUrl => _baseUrl;
+        
 
-        private static string dbConnectionString;
-        public static string DBConnectionString
-        {
-            get { return dbConnectionString; }
-        }
+        private static string _dbConnectionString;
+        public static string DbConnectionString => _dbConnectionString;
+        
 
-        private static string userName;
-        public static string UserName
-        {
-            get { return userName; }
-        }
+        private static string _userName;
+        public static string UserName => _userName;
+        
 
-        private static string password;
-        public static string Password
-        {
-            get { return password; }
-        }
+        private static string _password;
+        public static string Password => _password;
+        
 
         public static void Initialize()
         {
-            string testEnv;
-
-            testEnv = ConfigurationManager.AppSettings["TestEnvironment"];
+            string testEnv = ConfigurationManager.AppSettings["TestEnvironment"];
 
             if (testEnv.Equals("Dev"))
             {
-                baseUrl = ConfigurationManager.AppSettings["Dev_BaseUrl"];
-                dbConnectionString = ConfigurationManager.AppSettings["Dev_DBConnectString"];
+                _baseUrl = ConfigurationManager.AppSettings["Dev_BaseUrl"];
+                _dbConnectionString = ConfigurationManager.AppSettings["Dev_DBConnectString"];
             }
             else if (testEnv.Equals("Test"))
             {
-                baseUrl = ConfigurationManager.AppSettings["Test_BaseUrl"];
-                dbConnectionString = ConfigurationManager.AppSettings["Test_DBConnectString"];
+                _baseUrl = ConfigurationManager.AppSettings["Test_BaseUrl"];
+                _dbConnectionString = ConfigurationManager.AppSettings["Test_DBConnectString"];
             }
             else if (testEnv.Equals("QA"))
             {
-                baseUrl = ConfigurationManager.AppSettings["QA_BaseUrl"];
-                dbConnectionString = ConfigurationManager.AppSettings["QA_DBConnectString"];
+                _baseUrl = ConfigurationManager.AppSettings["QA_BaseUrl"];
+                _dbConnectionString = ConfigurationManager.AppSettings["QA_DBConnectString"];
             }
             else
             {
                 throw new ArgumentException();
             }
 
-            //userName = ConfigurationManager.AppSettings["UserName"];
-            //string encryptedPassword = ConfigurationManager.AppSettings["Password"];
+            _userName = ConfigurationManager.AppSettings["UserName"];
+            string encryptedPassword = ConfigurationManager.AppSettings["Password"];
 
-            //string key = ConfigurationManager.AppSettings["EncryptionKey"];
+            string key = ConfigurationManager.AppSettings["EncryptionKey"];
 
-            //password = EncrytpDecrypt.Decrypt(encryptedPassword, key);
+            _password = EncrytpDecrypt.Decrypt(encryptedPassword, key);
+           
         }
 
     }

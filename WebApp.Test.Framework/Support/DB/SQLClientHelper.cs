@@ -5,19 +5,19 @@ using System.Data.SqlClient;
 
 namespace WebApp.Test.Framework.Support.DB
 {
-    public class SQLClientHelper
+    public class SqlClientHelper
     {
-        private string dbConnectionString;
-        private int commandTimeout = Convert.ToInt32(ConfigurationManager.AppSettings["SQL_CommandTimeout"]);
+        private string _dbConnectionString;
+        private int _commandTimeout = Convert.ToInt32(ConfigurationManager.AppSettings["SQL_CommandTimeout"]);
 
-        public SQLClientHelper(string dbConnectionString)
+        public SqlClientHelper(string dbConnectionString)
         {
-            this.dbConnectionString = dbConnectionString;
+            this._dbConnectionString = dbConnectionString;
         }
 
-        public DataSet ExecuteSQLCommandAndReturnResults(string sqlCmd)
+        public DataSet ExecuteSqlCommandAndReturnResults(string sqlCmd)
         {
-            using (SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCmd, dbConnectionString))
+            using (SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCmd, _dbConnectionString))
             {
                 DataSet dataSet = new DataSet("RESULT");
                 sqlDataAdapter.Fill(dataSet);
@@ -25,11 +25,11 @@ namespace WebApp.Test.Framework.Support.DB
             }
         }
 
-        public DataSet ExecuteSQLCommandWithIncreasedTimeoutAndReturnResults(string sqlCmd)
+        public DataSet ExecuteSqlCommandWithIncreasedTimeoutAndReturnResults(string sqlCmd)
         {
-            using (SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCmd, dbConnectionString))
+            using (SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCmd, _dbConnectionString))
             {
-                sqlDataAdapter.SelectCommand.CommandTimeout = commandTimeout;
+                sqlDataAdapter.SelectCommand.CommandTimeout = _commandTimeout;
                 DataSet dataSet = new DataSet("RESULT");
                 sqlDataAdapter.Fill(dataSet);
                 sqlDataAdapter.SelectCommand.ResetCommandTimeout();
@@ -39,7 +39,7 @@ namespace WebApp.Test.Framework.Support.DB
 
         public void BulkCopy(DataTable testData, string table)
         {
-            using (SqlConnection sqlConnection = new SqlConnection(dbConnectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(_dbConnectionString))
             {
                 sqlConnection.Open();
                 using (SqlBulkCopy s = new SqlBulkCopy(sqlConnection))

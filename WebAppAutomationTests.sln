@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Test.Framework", "WebApp.Test.Framework\WebApp.Test.Framework.csproj", "{6519288E-A590-448C-9844-38879D789F50}"
 EndProject
@@ -14,12 +14,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7A019366-EC4D-419E-A58E-0D812C2800BE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite", "WebSite\WebSite.csproj", "{3C264BDF-E020-423E-9D31-659ADC7C6CC3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlow.Tests", "SpecFlow.Tests\SpecFlow.Tests.csproj", "{2B8EDF1D-AEDD-4423-AE3E-C861F22C34DB}"
-	ProjectSection(ProjectDependencies) = postProject
-		{6519288E-A590-448C-9844-38879D789F50} = {6519288E-A590-448C-9844-38879D789F50}
-		{5E9823A2-4300-4944-869D-F6A68A663D68} = {5E9823A2-4300-4944-869D-F6A68A663D68}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite.Biz", "WebSite.Biz\WebSite.Biz.csproj", "{5E9823A2-4300-4944-869D-F6A68A663D68}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -44,10 +38,6 @@ Global
 		{3C264BDF-E020-423E-9D31-659ADC7C6CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C264BDF-E020-423E-9D31-659ADC7C6CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C264BDF-E020-423E-9D31-659ADC7C6CC3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B8EDF1D-AEDD-4423-AE3E-C861F22C34DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B8EDF1D-AEDD-4423-AE3E-C861F22C34DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B8EDF1D-AEDD-4423-AE3E-C861F22C34DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B8EDF1D-AEDD-4423-AE3E-C861F22C34DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5E9823A2-4300-4944-869D-F6A68A663D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5E9823A2-4300-4944-869D-F6A68A663D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E9823A2-4300-4944-869D-F6A68A663D68}.Release|Any CPU.ActiveCfg = Release|Any CPU

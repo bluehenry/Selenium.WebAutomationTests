@@ -9,45 +9,45 @@ namespace WebApp.Test.Framework.Support.Common
 {
     public class DateHelper
     {
-        public string getDateAsString(string dateTimeString)
+        public string GetDateAsString(string dateTimeString)
         {
-            return getDateAsString(stringToDateTime(dateTimeString));
+            return GetDateAsString(StringToDateTime(dateTimeString));
         }
 
-        public string getDateAsString(DateTime dateTime)
+        public string GetDateAsString(DateTime dateTime)
         {
             string dateTimeString = dateTime.ToString("d");
             return dateTimeString;
         }
 
-        public string getDateHoursMinutesAsString(DateTime dateTime)
+        public string GetDateHoursMinutesAsString(DateTime dateTime)
         {
             string dateTimeString = dateTime.ToString("g");
             return dateTimeString;
         }
 
-        public string getDateHoursMinutesAsString(DateTimeOffset dateTime)
+        public string GetDateHoursMinutesAsString(DateTimeOffset dateTime)
         {
             string dateTimeString = dateTime.ToString("g");
             return dateTimeString;
         }
-        public string getDateHoursMinutesSecondsMillisecondsTimezoneAsString(DateTime dateTime)
+        public string GetDateHoursMinutesSecondsMillisecondsTimezoneAsString(DateTime dateTime)
         {
             string dateTimeString = dateTime.ToString("o");
             return dateTimeString;
         }
-        public string getDateHoursMinutesSecondsMillisecondsTimezoneAsString(DateTimeOffset dateTime)
+        public string GetDateHoursMinutesSecondsMillisecondsTimezoneAsString(DateTimeOffset dateTime)
         {
             string dateTimeString = dateTime.ToString("o");
             return dateTimeString;
         }
-        public string getDateHoursMinutesSecondsMillisecondsAsString(DateTime dateTime)
+        public string GetDateHoursMinutesSecondsMillisecondsAsString(DateTime dateTime)
         {
             string dateTimeString = dateTime.ToString("yyyy-MM-dd HH:mm:ss.fff");
             return dateTimeString;
         }
 
-        public string getDateHoursMinutesSecondsMillisecondsAsString(DateTimeOffset dateTime)
+        public string GetDateHoursMinutesSecondsMillisecondsAsString(DateTimeOffset dateTime)
         {
             string dateTimeString = dateTime.ToString("yyyy-MM-dd HH:mm:ss.fff");
             return dateTimeString;
@@ -59,7 +59,7 @@ namespace WebApp.Test.Framework.Support.Common
             return dateTimeString;
         }
 
-        public DateTime stringToDateTime(string dateTime)
+        public DateTime StringToDateTime(string dateTime)
         {
             string convertDateTime = "";
             switch (dateTime.ToUpper())

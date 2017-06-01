@@ -49,6 +49,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="TechTalk.SpecFlow, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
       <HintPath>..\packages\SpecFlow.2.1.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
       <Private>True</Private>
@@ -75,6 +76,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="EncryptPassword\EncryptPassword.cs" />
+    <Compile Include="FeatureSteps\HomePage\HomePageSteps.cs" />
+    <Compile Include="FeatureSteps\HomePage\HomePageStepsParameters.cs" />
+    <Compile Include="FeatureSteps\ScenarioBackground\ScenarioBackground.cs" />
+    <Compile Include="FeatureSteps\TestSetup\TestSetup.cs" />
+    <Compile Include="Features\HomePage.feature.cs">
+      <DependentUpon>HomePage.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="WebSite.Tests\WebSiteTests.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -87,6 +98,10 @@
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="Features\HomePage.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>HomePage.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

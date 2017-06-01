@@ -8,35 +8,35 @@ namespace WebApp.Tests
     [TestClass]
     public class WebSiteTests
     {
-        private HomePage homePage;
+        private HomePage _homePage;
 
         public WebSiteTests()
         {
-            homePage = new HomePage();
+            _homePage = new HomePage();
         }
 
         [TestMethod]
         public void Can_Goto_HomePage()
         {
-            homePage.GoTo();            
-            Assert.IsTrue(homePage.IsAt());
+            _homePage.GoTo();            
+            Assert.IsTrue(_homePage.IsAt());
         }
 
 
         [TestMethod]
         public void Can_Select()
         {
-            homePage.GoTo();
-            homePage.Select();
+            _homePage.GoTo();
+            _homePage.Select();
         }
 
         [TestMethod]
         public void Can_UploadFile()
         {
-            homePage.GoTo();
+            _homePage.GoTo();
 
             string filePath = @"C:\temp\test.txt";
-            homePage.Uploadfile(filePath);
+            _homePage.Uploadfile(filePath);
         }
     }
 }

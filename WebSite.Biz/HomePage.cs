@@ -1,7 +1,7 @@
-﻿using OpenQA.Selenium;
+﻿using System.Windows.Forms;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using WebApp.Test.Framework;
-using System.Windows.Forms;
+using WebApp.Test.Framework.Selenium;
 
 namespace WebSite.Biz
 {
@@ -9,12 +9,12 @@ namespace WebSite.Biz
     {
         public void GoTo()
         {
-            Browser.webDriver.Navigate().GoToUrl(Browser.baseUrl);
+            Browser.WebDriver.Navigate().GoToUrl(Browser.BaseUrl);
         }
         
         public bool IsAt()
         {
-            IWebElement h1 = Browser.webDriver.FindElement(By.CssSelector("body > h1"));
+            IWebElement h1 = Browser.WebDriver.FindElement(By.CssSelector("body > h1"));
 
             return (h1.Text.ToString().Equals("Selenium test framework"));
         }
@@ -22,14 +22,14 @@ namespace WebSite.Biz
         public void Select()
         {
             // Checkbox
-            Browser.webDriver.FindElement(By.CssSelector("#checkBox1")).Click();
-            Browser.webDriver.FindElement(By.CssSelector("#checkBox2")).Click();
+            Browser.WebDriver.FindElement(By.CssSelector("#checkBox1")).Click();
+            Browser.WebDriver.FindElement(By.CssSelector("#checkBox2")).Click();
 
             // Radio - WA
-            Browser.webDriver.FindElement(By.CssSelector("#optionsRadios3")).Click();
+            Browser.WebDriver.FindElement(By.CssSelector("#optionsRadios3")).Click();
 
             // Select - Perth
-            IWebElement element = Browser.webDriver.FindElement(By.CssSelector("body > div > div:nth-child(3) > form > select"));
+            IWebElement element = Browser.WebDriver.FindElement(By.CssSelector("body > div > div:nth-child(3) > form > select"));
             SelectElement select = new SelectElement(element);
             select.SelectByText("Perth"); 
 
@@ -37,7 +37,7 @@ namespace WebSite.Biz
 
         public void Uploadfile(string filePath)
         {
-            IWebElement fileSelect = Browser.webDriver.FindElement(By.CssSelector("#fileselect"));
+            IWebElement fileSelect = Browser.WebDriver.FindElement(By.CssSelector("#fileselect"));
             if (Browser.BrowserType.Equals("Chrome"))
             {
                 fileSelect.SendKeys(filePath);

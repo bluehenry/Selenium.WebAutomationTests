@@ -3,7 +3,7 @@ using TechTalk.SpecFlow.Assist;
 using WebApp.Test.Framework.Selenium;
 using WebApp.Test.Framework.Support;
 
-namespace WebApp.Tests.Feature.Steps
+namespace WebApp.Tests.FeatureSteps.TestSetup
 {
     [Binding]
     public class TestSetup 

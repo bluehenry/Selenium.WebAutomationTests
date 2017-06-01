@@ -6,62 +6,59 @@ using OpenQA.Selenium.Chrome;
 using System.Diagnostics;
 using WebApp.Test.Framework.Support;
 
-namespace WebApp.Test.Framework
+namespace WebApp.Test.Framework.Selenium
 {
     public static class Browser
     {
-        public static IWebDriver webDriver;
+        public static IWebDriver WebDriver;
 
-        public static string baseUrl { get; set; }
+        public static string BaseUrl { get; set; }
 
-        private static string browserType;
-        public static string BrowserType
-        {
-            get { return browserType; }
-        }
+        private static string _browserType;
+        public static string BrowserType => _browserType;
 
         public static void Initialize()
         {
-            if ( webDriver == null )
+            if ( WebDriver == null )
             {
                 TestEnvironment.Initialize();
 
                 string strBrowserType = "";
                 string driverPath = "";
                                 
-                baseUrl = TestEnvironment.BaseUrl;
+                BaseUrl = TestEnvironment.BaseUrl;
 
                 // Read from App.config
                 strBrowserType = ConfigurationManager.AppSettings["BrowserType"];
                 driverPath = ConfigurationManager.AppSettings["BrowerDriverPath"];
 
-                browserType = strBrowserType;
+                _browserType = strBrowserType;
 
-                if (browserType.Equals("IE"))
+                if (_browserType.Equals("IE"))
                 {
                     foreach (var process in Process.GetProcessesByName("IEDriverServer"))
                     {
                         process.Kill();
                     }
 
-                    var IEOptions = new InternetExplorerOptions();
-                    IEOptions.IgnoreZoomLevel = true;
-                    IEOptions.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
+                    var internetExplorerOptions = new InternetExplorerOptions();
+                    internetExplorerOptions.IgnoreZoomLevel = true;
+                    internetExplorerOptions.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
 
                     // To resolve IWebElement.Sendkeys() is too slow
-                    IEOptions.RequireWindowFocus = true;
+                    internetExplorerOptions.RequireWindowFocus = true;
 
                     // Setting attribute EnableNativeEvents to false enable click button in IE
-                    IEOptions.EnableNativeEvents = false;
+                    internetExplorerOptions.EnableNativeEvents = false;
 
                     // Setting attribute EnablePersistentHover to false enable action.MoveToElement() in IE
                     //IEOptions.EnablePersistentHover = false;
 
-                    webDriver = new InternetExplorerDriver(driverPath, IEOptions);
-                    webDriver.Manage().Window.Maximize();
+                    WebDriver = new InternetExplorerDriver(driverPath, internetExplorerOptions);
+                    WebDriver.Manage().Window.Maximize();
                     TurnOnWati();
                 }
-                else if (browserType.Equals("Chrome"))
+                else if (_browserType.Equals("Chrome"))
                 {
                     foreach (var process in Process.GetProcessesByName("chromedriver"))
                     {
@@ -72,30 +69,30 @@ namespace WebApp.Test.Framework
                     ChromeOptions chromeOptions = new ChromeOptions();
                     chromeOptions.AddArguments("no-sandbox");
 
-                    webDriver = new ChromeDriver(driverPath, chromeOptions);
-                    webDriver.Manage().Window.Maximize();
+                    WebDriver = new ChromeDriver(driverPath, chromeOptions);
+                    WebDriver.Manage().Window.Maximize();
                     TurnOnWati();
                 }
                 else
                 {
-                    throw new System.ArgumentException($"The browser type {browserType} is not supported");
+                    throw new System.ArgumentException($"The browser type {_browserType} is not supported");
                 }
             }
         }
 
         public static void Quit()
         {            
-            webDriver.Quit();
+            WebDriver.Quit();
         }
 
         private static void TurnOnWati()
         {            
-            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
+            WebDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
         }
 
         private static void TurnOffWait()
         {
-            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(0);
+            WebDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(0);
         }
 
         internal static void NoWait(Action action)
