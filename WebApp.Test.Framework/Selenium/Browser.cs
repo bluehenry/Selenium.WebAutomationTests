@@ -64,13 +64,17 @@ namespace WebApp.Test.Framework.Selenium
                     {
                         process.Kill();
                     }
+                    
+                    ChromeOptions chromeOptions = new ChromeOptions();
+                    chromeOptions.AddArguments("start-maximized");
+                    //WebDriver.Manage().Window.Maximize();
 
                     // Setting no-sandbox for TFS build agent
-                    ChromeOptions chromeOptions = new ChromeOptions();
-                    chromeOptions.AddArguments("no-sandbox");
+                    chromeOptions.AddArguments("--no-sandbox");
+
+                    //chromeOptions.AddArguments("start-maximized", "--no-sandbox", "--disable-popup-blocking", "--disable-extensions");
 
                     WebDriver = new ChromeDriver(driverPath, chromeOptions);
-                    WebDriver.Manage().Window.Maximize();
                     TurnOnWati();
                 }
                 else
