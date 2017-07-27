@@ -1,16 +1,29 @@
-﻿using System.Threading;
+﻿using System;
 using OpenQA.Selenium;
+using System.Threading;
+using OpenQA.Selenium.Support.UI;
 
 namespace WebApp.Test.Framework.Selenium
 {
     public static class SeleniumHelper
     {
-        public static void WaitElementDisplayed(IWebElement element)
+
+        public static void WaitElementVisible(By by, int timeoutInSeconds)
         {
-            do
+            if (timeoutInSeconds > 0)
             {
-                Thread.Sleep(1000);
-            } while (element.Displayed == false);
+                WebDriverWait wait = new WebDriverWait(Browser.WebDriver, TimeSpan.FromSeconds(timeoutInSeconds));
+                wait.Until(ExpectedConditions.ElementIsVisible(by));
+            }
+        }
+
+        public static void WaitElementExists(By by, int timeoutInSeconds)
+        {
+            if (timeoutInSeconds > 0)
+            {
+                WebDriverWait wait = new WebDriverWait(Browser.WebDriver, TimeSpan.FromSeconds(timeoutInSeconds));
+                wait.Until(ExpectedConditions.ElementExists(by));
+            }
         }
 
         public static void ForceClick(IWebElement element)
@@ -21,7 +34,7 @@ namespace WebApp.Test.Framework.Selenium
             }
             else
             {
-                element.SendKeys(Keys.Enter);
+                element.SendKeys(Keys.Enter); 
             }
         }
 
