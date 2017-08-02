@@ -8,7 +8,7 @@ namespace WebApp.Test.Framework.Selenium
     public static class SeleniumHelper
     {
 
-        public static void WaitElementVisible(By by, int timeoutInSeconds)
+        public static void WaitElementVisible(By by, int timeoutInSeconds = 15 )
         {
             if (timeoutInSeconds > 0)
             {
@@ -17,7 +17,7 @@ namespace WebApp.Test.Framework.Selenium
             }
         }
 
-        public static void WaitElementExists(By by, int timeoutInSeconds)
+        public static void WaitElementExists(By by, int timeoutInSeconds = 15 )
         {
             if (timeoutInSeconds > 0)
             {
