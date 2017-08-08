@@ -8,22 +8,47 @@ namespace WebApp.Test.Framework.Selenium
     public static class SeleniumHelper
     {
 
-        public static void WaitElementVisible(By by, int timeoutInSeconds = 15 )
+        public static bool WaitElementVisible(By by, int timeoutInSeconds = 15 )
         {
+            bool result = false;
+
             if (timeoutInSeconds > 0)
             {
                 WebDriverWait wait = new WebDriverWait(Browser.WebDriver, TimeSpan.FromSeconds(timeoutInSeconds));
-                wait.Until(ExpectedConditions.ElementIsVisible(by));
+                try
+                {
+                    wait.Until(ExpectedConditions.ElementIsVisible(by));
+                    result = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    result = false;
+                }
             }
+            return result;
         }
 
-        public static void WaitElementExists(By by, int timeoutInSeconds = 15 )
+        public static bool WaitElementExists(By by, int timeoutInSeconds = 15 )
         {
+            bool result = false;
+
             if (timeoutInSeconds > 0)
             {
                 WebDriverWait wait = new WebDriverWait(Browser.WebDriver, TimeSpan.FromSeconds(timeoutInSeconds));
-                wait.Until(ExpectedConditions.ElementExists(by));
+
+                try
+                {
+                    wait.Until(ExpectedConditions.ElementExists(by));
+                    result = true;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    result = false;
+                }
             }
+            return result;
         }
 
         public static void ForceClick(IWebElement element)
