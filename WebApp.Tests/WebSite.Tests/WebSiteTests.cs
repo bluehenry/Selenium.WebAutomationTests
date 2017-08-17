@@ -38,5 +38,14 @@ namespace WebApp.Tests
             string filePath = @"C:\temp\test.txt";
             _homePage.Uploadfile(filePath);
         }
+
+        [TestMethod]
+        public void PutEmailTests()
+        {
+            _homePage.GoTo();
+
+            string header = "Execute Java Script test";
+            _homePage.ChangeHeader(header);
+        }
     }
 }

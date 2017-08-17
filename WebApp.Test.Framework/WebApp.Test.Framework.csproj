@@ -63,6 +63,7 @@
     <Compile Include="Selenium\SeleniumHelper.cs" />
     <Compile Include="Support\Common\DateHelper.cs" />
     <Compile Include="Support\Common\OSHelper.cs" />
+    <Compile Include="Support\Common\RegistryHelper.cs" />
     <Compile Include="Support\DB\SQLClientHelper.cs" />
     <Compile Include="Support\Extensions\DateTimeExtensions.cs" />
     <Compile Include="Support\Security\EncrytpDecrypt.cs" />

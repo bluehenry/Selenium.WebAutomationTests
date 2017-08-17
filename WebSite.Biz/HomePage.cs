@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using WebApp.Test.Framework.Selenium;
@@ -50,6 +51,21 @@ namespace WebSite.Biz
                 SendKeys.SendWait(filePath);
                 System.Threading.Thread.Sleep(1000);
                 SendKeys.SendWait(OpenQA.Selenium.Keys.Enter);
+            }
+        }
+
+        public void ChangeHeader(string header)
+        {
+            if (SeleniumHelper.WaitElementExists(By.CssSelector("body > div:nth-child(2) > div:nth-child(1) > form > h2")))
+            {
+                IJavaScriptExecutor js = (IJavaScriptExecutor)Browser.WebDriver;
+                js.ExecuteScript(
+                    $"document.querySelector('body > div:nth-child(2) > div:nth-child(1) > form > h2').innerHTML='{header}'");
+
+            }
+            else
+            {
+                throw new ApplicationException("Cannot find email input element.");
             }
         }
     }
