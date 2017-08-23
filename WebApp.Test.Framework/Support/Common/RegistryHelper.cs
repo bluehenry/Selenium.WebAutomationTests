@@ -9,18 +9,26 @@ namespace WebApp.Test.Framework.Support.Common
 {
     public static class RegistryHelper
     {
-        public static void DeleteKeyFromLocalMachine(string keyPath)
+        public static void DeleteValueFromLocalMachine(string key, string value)
         {
-            using (RegistryKey registryKey = Registry.LocalMachine.OpenSubKey(keyPath, writable: true))
+           
+            
+            using (RegistryKey registryKey = Registry.LocalMachine.OpenSubKey(key, writable: true))
             {
                 if (registryKey != null)
                 {
-                    registryKey.DeleteValue(".");
-                    Console.WriteLine("Delete the key in Registry.");
+                    if (registryKey.GetValue(value) != null )
+                    { 
+                        registryKey.DeleteValue(value);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Cannot find value {key}\\{value} in Registry.");
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("Cannot find the key in Registry.");
+                    Console.WriteLine($"Cannot find key {key} in Registry.");
                 }
             }
         }
