@@ -26,6 +26,32 @@ SpecFlow is the official Cucumber implementation for .NET.  Behavior Driven Deve
  - Drag and drop file to import
  
 # Selenium Technical tips  
+## Select element from a web page
+The following are the list of object identifier or locators supported by selenium.
+Css
+xpath               
+id
+Name
+class name
+Linktext
+Partial Linktext
+Tag Name
+
+In most situation, we will use CSS and XPath.
+
+### CSS Vs. XPath
+There are a lot of discussion about CSS Vs. XPath. I don't think performance is a big issue. Because Selenium doesn't focus on performance testing. In most of cases page rendering take more time than identify a element.
+You can also check this article[Css Vs. X Path](http://elementalselenium.com/tips/32-xpath-vs-css). 
+The conclusion is "For starters there is no dramatic difference in performance between XPath and CSS."
+
+The reason that I recommand to use CSS as far as possible is it is simple, particularly, when you can use id, name or class name.
+
+However, if there is no id/name or they are dynamic you might think about XPath. With relative XPath, we can locate an element directly irrespective of its location in the DOM. For example we know a label text, then we can locate a input element beside it. Sometimes CSSSelecor change a lot when the UI is re-design. But the the relative path would not change.
+
+```sh
+    string xPath = $"//table[1]/tbody/*/td[2][text()='{scenarioName}']/../td[8]/div/button";
+```
+
 ### Setup Browse option
 ```sh
         public static void Initialize()
