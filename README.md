@@ -41,7 +41,7 @@ In most situation, we will use CSS and XPath.
 
 ### CSS Vs. XPath
 There are a lot of discussion about CSS Vs. XPath. I don't think performance is a big issue. Because Selenium doesn't focus on performance testing. In most of cases page rendering take more time than identify a element.
-You can also check this article[Css Vs. X Path](http://elementalselenium.com/tips/32-xpath-vs-css). 
+You can also check this article [Css Vs. X Path](http://elementalselenium.com/tips/32-xpath-vs-css). 
 The conclusion is "For starters there is no dramatic difference in performance between XPath and CSS."
 
 The reason that I recommand to use CSS as far as possible is it is simple, particularly, when you can use id, name or class name.
@@ -52,7 +52,7 @@ However, if there is no id/name or they are dynamic you might think about XPath.
     string xPath = $"//table[1]/tbody/*/td[2][text()='{scenarioName}']/../td[8]/div/button";
 ```
 
-### Setup Browse option
+## Setup Browse option
 ```sh
         public static void Initialize()
         {
@@ -119,7 +119,7 @@ However, if there is no id/name or they are dynamic you might think about XPath.
             }
 ```
 
-### Dealing with AJAX / Waiting a page loaded
+## Dealing with AJAX / Waiting a page loaded
  1. Wait within a time frame.
 ```sh
 	System.Threading.Thread.Sleep(10000);
@@ -136,7 +136,7 @@ However, if there is no id/name or they are dynamic you might think about XPath.
     webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
 ```
 
-### Using Action Class to emulate advanced interactions, rather than using the Keyboard or Mouse directly.
+## Using Action Class to emulate advanced interactions, rather than using the Keyboard or Mouse directly.
 ```sh
 	var element = Browser.WebDriver.FindElement(By.XPath(xPath));
 	Actions actions = new Actions(Browser.WebDriver);
@@ -146,7 +146,7 @@ However, if there is no id/name or they are dynamic you might think about XPath.
 	element.Click();
 ```
 
-### Executes JavaScript in the context of the currently selected frame or window
+## Executes JavaScript in the context of the currently selected frame or window
 ```sh
 ((IJavaScriptExecutor) Browser.WebDriver).ExecuteScript("window.scrollTo(0,200)");
 ```
