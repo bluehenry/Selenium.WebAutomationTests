@@ -150,3 +150,14 @@ However, if there is no id/name or they are dynamic you might think about XPath.
 ```sh
 ((IJavaScriptExecutor) Browser.WebDriver).ExecuteScript("window.scrollTo(0,200)");
 ```
+
+## Dealing with Element is not currently visible and may not be manipulated exception
+```sh
+
+    // Click the parent node make select element visible
+    Browser.WebDriver.FindElement(By.CssSelector("#createModal > div > div > div.modal-body > div:nth-child(1) > span > span > span.k-select")).Click();
+
+    new Actions(Browser.WebDriver)
+        .MoveToElement(Browser.WebDriver.FindElement(By.CssSelector("#scenarioDropdown"))).SendKeys(baseLine).Perform();
+
+```
