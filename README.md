@@ -1,20 +1,20 @@
-# Web Application Automation Test Framekwork
+# Selenium Web Automation Test Framekwork
 
-WebAppAutomationTests is a C# Web application automation test framework powered by [Selenium](http://www.seleniumhq.org/) and [SpecFlow](http://specflow.org/). 
+This is a C# Web automation test framework powered by [Selenium](http://www.seleniumhq.org/) and [SpecFlow](http://specflow.org/). 
 
 # Selenium
 With Selenium you can create robust, browser-based regression automation suites and tests. Most of time, Selenium is quite straightforward: Find an element and perform an operation on it. Writing test scripts with Selenium WebDriver is much more than knowing the API; it involves programming, HTML, JavaScript, and web browsers.
 
 # SpecFlow
-SpecFlow is the official Cucumber implementation for .NET.  Behavior Driven Development(BDD) with SpecFlow provide a understandable communication method to people (Business Analyst, Test Analyst and Developer). 
+SpecFlow is the official Cucumber implementation for .NET.  Behavior Driven Development (BDD) with SpecFlow provide a understandable communication method to people (Business Analyst, Test Analyst and Developer). 
 
 # Automation Test Framework Features
  - Decouple Selenium test framework from business logical and test case. 
  - Provide a out-of-the-box automation test capability. So that testers can build up a test project for a new web application very quickly. 
- - With ASP.NET Data Access enable back end verification. In most of cases verifying test result from database is more effective and efficient. You can choose Entity Framework, Database Management Systems or any other options to access database.
+ - With ASP.NET/ASP.NET Core Data Access enable back end verification. In most of cases verifying test result from database is more effective and efficient. You can choose Entity Framework, Database Management Systems or any other options to access database.
  - Use SpecFlow to create features and scenarios. 
 
-# Web application demostration
+# Web Application Demostration
  - Multiple web browser support, like IE, Chrome etc.
  - Navigation 
  - Button
@@ -28,32 +28,41 @@ SpecFlow is the official Cucumber implementation for .NET.  Behavior Driven Deve
 # Selenium Technical tips  
 ## Select element from a web page
 The following are the list of object identifier or locators supported by selenium.
-Css
-xpath               
-id
-Name
-class name
-Linktext
-Partial Linktext
-Tag Name
+- CSS
+- XPath               
+- ID
+- Name
+- Class Name
+- Linktext
+- Partial Linktext
+- Tag Name
 
-In most situation, we will use CSS and XPath.
+ID/Name is the first choose. However, if there is no ID/Name or they are dynamic you might think about CSS or XPath. 
 
-### CSS Vs. XPath
-There are a lot of discussion about CSS Vs. XPath. I don't think performance is a big issue. Because Selenium doesn't focus on performance testing. In most of cases page rendering take more time than identify a element.
-You can also check this article [Css Vs. X Path](http://elementalselenium.com/tips/32-xpath-vs-css). 
-The conclusion is "For starters there is no dramatic difference in performance between XPath and CSS."
+Sometimes CSS Selecor change a lot when the UI is re-design. In this case, XPath might be a good option.
 
-The reason that I recommand to use CSS as far as possible is it is simple, particularly, when you can use id, name or class name.
+## Using text get element in XPath
+```C
+By.XPath("//td[text()='Profile']")
 
-However, if there is no id/name or they are dynamic you might think about XPath. With relative XPath, we can locate an element directly irrespective of its location in the DOM. For example we know a label text, then we can locate a input element beside it. Sometimes CSSSelecor change a lot when the UI is re-design. But the the relative path would not change.
-
-```sh
-    string xPath = $"//table[1]/tbody/*/td[2][text()='{scenarioName}']/../td[8]/div/button";
+By.XPath("//a[contains(text(),'Profile')]")
 ```
 
+With relative XPath, we can locate an element directly as well irrespective of its location in the DOM. 
+
+```C
+    By.XPath("//table/*/td[2][text()='Profile}']/../td[8]/div/button");
+```
+
+## CSS Vs. XPath
+There are a lot of discussion about CSS Vs. XPath. I don't think performance is a big issue. Because Selenium doesn't focus on performance testing. In most of cases page rendering take more time than identify a element.
+You can also check this article [Css Vs. XPath](http://elementalselenium.com/tips/32-xpath-vs-css). 
+The conclusion is "For starters there is no dramatic difference in performance between XPath and CSS."
+
+
+
 ## Setup Browse option
-```sh
+```C
         public static void Initialize()
         {
             if ( WebDriver == null )
