@@ -41,6 +41,16 @@ ID/Name is the first choose. However, if there is no ID/Name or they are dynamic
 
 Sometimes CSS Selecor change a lot when the UI is re-design. In this case, XPath might be a good option.
 
+## Using ID in CssSelector
+```C
+By.CssSelector("#ID")
+```
+
+## Using Name in CssSelector
+```C
+By.CssSelector(".Name")
+```
+
 ## Using text get element in XPath
 ```C
 By.XPath("//td[text()='Profile']")
