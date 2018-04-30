@@ -178,10 +178,17 @@ Browser.WebDriver.FindElement(By.CssSelector("#createModal > div > div > div.mod
 new Actions(Browser.WebDriver)
     .MoveToElement(Browser.WebDriver.FindElement(By.CssSelector("#scenarioDropdown"))).SendKeys(baseLine).Perform();
 ```
-## Upload file
+## Upload File
+Note: Can't run in C# debug mode
 ```C
 using System.Windows.Forms;
 
     SendKeys.SendWait(@"C:\temp\avatar.jpg");
     SendKeys.SendWait(@"{Enter}");
+```
+
+## Windows Security
+Add user name and password in front of URL. Encrypt password in your code, so others can't see the password.
+```C
+BaseUrl = $"https://{UserName}:{Password}@{BaseUrl}";
 ```
