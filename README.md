@@ -25,7 +25,7 @@ SpecFlow is the official Cucumber implementation for .NET.  Behavior Driven Deve
  - Pop-up window
  - Drag and drop file to import
  
-# Selenium Technical tips  
+# Selenium Technical Tips  
 ## Select element from a web page
 The following are the list of object identifier or locators supported by selenium.
 - CSS
