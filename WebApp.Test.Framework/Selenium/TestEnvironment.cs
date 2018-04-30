@@ -1,52 +1,36 @@
 ﻿using System;
 using System.Configuration;
+using System.Xml;
+using WebApp.Test.Framework.Support.Security;
 
 namespace WebApp.Test.Framework.Selenium
 {
     public static class TestEnvironment
     {
-        private static string _baseUrl;
-        public static string BaseUrl
-        {
-            get { return _baseUrl; }
-        }
+        public static string BrowserType { get; private set; }
+        public static string BrowserDriverPath { get; private set; }
+        public static string BaseUrl { get; private set; }
+        public static string DbConnectionString { get; private set; }
+        public static string UserName { get; private set; }
+        public static string Password { get; private set; }
 
-        private static string _dbConnectionString;
-        public static string DBConnectionString
-        {
-            get { return _dbConnectionString; }
-        }
-
-        private static string _userName;
-        public static string UserName
-        {
-            get { return _userName; }
-        }
-
-        private static string _password;
-        public static string Password
-        {
-            get { return _password; }
-        }
-
+        // Read from app.config file
         public static void Initialize()
         {
+            BrowserType = ConfigurationManager.AppSettings["BrowserType"];
+            BrowserDriverPath = ConfigurationManager.AppSettings["BrowserDriverPath"];
+
             string testEnv = ConfigurationManager.AppSettings["TestEnvironment"];
 
-            if (testEnv.Equals("DEV") || testEnv.Equals("Dev"))
+            if (testEnv.Equals("Dev", StringComparison.InvariantCultureIgnoreCase))
             {
-                _baseUrl = ConfigurationManager.AppSettings["Dev_BaseUrl"];
-                _dbConnectionString = ConfigurationManager.AppSettings["Dev_DBConnectString"];
+                BaseUrl = ConfigurationManager.AppSettings["DevBaseUrl"];
+                DbConnectionString = ConfigurationManager.AppSettings["DevDbConnectString"];
             }
-            else if (testEnv.Equals("TEST") || testEnv.Equals("Test"))
+            else if (testEnv.Equals("Dev", StringComparison.InvariantCultureIgnoreCase))
             {
-                _baseUrl = ConfigurationManager.AppSettings["Test_BaseUrl"];
-                _dbConnectionString = ConfigurationManager.AppSettings["Test_DBConnectString"];
-            }
-            else if (testEnv.Equals("QA"))
-            {
-                _baseUrl = ConfigurationManager.AppSettings["QA_BaseUrl"];
-                _dbConnectionString = ConfigurationManager.AppSettings["QA_DBConnectString"];
+                BaseUrl = ConfigurationManager.AppSettings["TestBaseUrl"];
+                DbConnectionString = ConfigurationManager.AppSettings["TestDbConnectString"];
             }
             else
             {
@@ -57,9 +41,117 @@ namespace WebApp.Test.Framework.Selenium
             //string encryptedPassword = ConfigurationManager.AppSettings["Password"];
 
             //string key = ConfigurationManager.AppSettings["EncryptionKey"];
-
             //_password = EncrytpDecrypt.Decrypt(encryptedPassword, key);
         }
+        
+        /// <summary>
+        /// Read from config.xml file.
+        /// It's for supporing Jenkins integration
+        /// </summary>
+        public static void InitializeForJenkins()
+        {
+            string configFile = @"C:\Workspace\bhp-or-vdt-seleniumtests\VDT.SeleniumTests\VDT.Tests\config.xml";
+            string environment = "";
+            string devBaseUrl = "";
+            string devDbConnectString = "";
+            string testBaseUrl = "";
+            string testDbConnectString = "";
+            string encryptedPassword = "";
+            string encryptionKey = "";
 
+
+            using (XmlReader reader = XmlReader.Create(configFile)
+            )
+            {
+                while (reader.Read())
+                {
+                    if (reader.IsStartElement())
+                    {
+                        switch (reader.Name)
+                        {
+                            case "BrowserType":
+                                if (reader.Read())
+                                {
+                                    BrowserType = reader.Value;
+                                }
+                                break;
+                            case "BrowserDriverPath":
+                                if (reader.Read())
+                                {
+                                    BrowserDriverPath = reader.Value;
+                                }
+                                break;
+                            case "TestEnvironment":
+                                if (reader.Read())
+                                {
+                                    environment = reader.Value;
+                                }
+                                break;
+                            case "DevBaseUrl":
+                                if (reader.Read())
+                                {
+                                    devBaseUrl = reader.Value;
+                                }
+                                break;
+                            case "DevDbConnectString":
+                                if (reader.Read())
+                                {
+                                    devDbConnectString = reader.Value;
+                                }
+                                break;
+                            case "TestBaseUrl":
+                                if (reader.Read())
+                                {
+                                    testBaseUrl = reader.Value;
+                                }
+                                break;
+                            case "TestDbConnectString":
+                                if (reader.Read())
+                                {
+                                    testDbConnectString = reader.Value;
+                                }
+                                break;
+                            case "UserName":
+                                if (reader.Read())
+                                {
+                                    UserName = reader.Value;
+                                }
+                                break;
+                            case "EncryptedPassword":
+                                if (reader.Read())
+                                {
+                                    encryptedPassword = reader.Value;
+                                }
+                                break;
+                            case "EncryptionKey":
+                                if (reader.Read())
+                                {
+                                    encryptionKey = reader.Value;
+                                }
+                                break;
+                        }
+                    }
+                }
+            }
+
+            if (environment.Equals("Dev", StringComparison.InvariantCultureIgnoreCase))
+            {
+                BaseUrl = devBaseUrl;
+                DbConnectionString = devDbConnectString;
+            }
+            else if (environment.Equals("Test", StringComparison.InvariantCultureIgnoreCase))
+            {
+                BaseUrl = testBaseUrl;
+                DbConnectionString = testDbConnectString;
+            }
+            else
+            {
+                throw new ArgumentException();
+            }
+
+            Password = EncrytpDecrypt.Decrypt(encryptedPassword, encryptionKey);
+
+            BaseUrl = $"https://{UserName}:{Password}@{BaseUrl}";
+        }
     }
 }

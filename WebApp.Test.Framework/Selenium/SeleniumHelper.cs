@@ -1,6 +1,6 @@
 ﻿using System;
 using OpenQA.Selenium;
-using System.Threading;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 
 namespace WebApp.Test.Framework.Selenium
@@ -63,5 +63,12 @@ namespace WebApp.Test.Framework.Selenium
             }
         }
 
+        public static void MoveTo(By by)
+        {
+            IWebElement element = Browser.WebDriver.FindElement(by);
+            Actions actions = new Actions(Browser.WebDriver);
+            actions.MoveToElement(element);
+            actions.Perform();
+        }
     }
 }

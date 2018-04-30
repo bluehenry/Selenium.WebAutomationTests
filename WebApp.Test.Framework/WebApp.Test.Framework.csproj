@@ -68,6 +68,7 @@
     <Compile Include="Selenium\Browser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Selenium\SeleniumHelper.cs" />
+    <Compile Include="Selenium\TestEnvironment.cs" />
     <Compile Include="Support\Common\DateHelper.cs" />
     <Compile Include="Support\Common\MathHelper.cs" />
     <Compile Include="Support\Common\OSHelper.cs" />
