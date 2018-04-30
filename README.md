@@ -178,3 +178,10 @@ Browser.WebDriver.FindElement(By.CssSelector("#createModal > div > div > div.mod
 new Actions(Browser.WebDriver)
     .MoveToElement(Browser.WebDriver.FindElement(By.CssSelector("#scenarioDropdown"))).SendKeys(baseLine).Perform();
 ```
+## Upload file
+```C
+using System.Windows.Forms;
+
+    SendKeys.SendWait(@"C:\temp\avatar.jpg");
+    SendKeys.SendWait(@"{Enter}");
+```
