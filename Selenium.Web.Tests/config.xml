@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <BrowserType>Chrome</BrowserType>
+  <BrowserDriverPath>C:\Libraries</BrowserDriverPath>
+  <TestEnvironment>Dev</TestEnvironment>
+
+  <DevBaseUrl>www.google.com</DevBaseUrl>
+  <DevDbConnectString>Server=server;Database=database;Integrated Security=true</DevDbConnectString>
+
+  <TestBaseUrl>www.google.com</TestBaseUrl>
+  <TestDbConnectString>Server=server;Database=database;Integrated Security=true</TestDbConnectString>
+
+  <UserName>jijuh9</UserName>
+  <EncryptedPassword>sDgFJs6cVsYayTU/YsRhCPQCQb9ZWjWumZv1zLWGy/Q=</EncryptedPassword>
+  <EncryptionKey>Key</EncryptionKey>
+
+  <SQLCommandTimeout>1000</SQLCommandTimeout>
+
+</Config>

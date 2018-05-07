@@ -52,13 +52,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebApp.Test.Framework\WebApp.Test.Framework.csproj">
-      <Project>{6519288e-a590-448c-9844-38879d789f50}</Project>
-      <Name>WebApp.Test.Framework</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\Selenium.WebTest.Framework\Selenium.WebTest.Framework.csproj">
+      <Project>{6519288e-a590-448c-9844-38879d789f50}</Project>
+      <Name>Selenium.WebTest.Framework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
