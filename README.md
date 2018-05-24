@@ -10,7 +10,7 @@ SpecFlow is the official Cucumber implementation for .NET.  Behavior Driven Deve
 
 # Automation Test Framework Features
  - Decouple Selenium test framework from business logical and test case. 
- - Provide a out-of-the-box automation test capability. So that testers can build up a test project for a new web application very quickly. 
+ - Provide an out-of-the-box automation test capability. So that testers can build up a test project for a new web application very quickly. 
  - With ASP.NET/ASP.NET Core Data Access enable back end verification. In most of cases verifying test result from database is more effective and efficient. You can choose Entity Framework, Database Management Systems or any other options to access database.
  - Use SpecFlow to create features and scenarios. 
 
@@ -65,7 +65,7 @@ By.XPath("//table/*/td[2][text()='Profile}']/../td[8]/div/button");
 ```
 
 ## CSS Vs. XPath
-There are a lot of discussion about CSS Vs. XPath. I don't think performance is a big issue. Because Selenium doesn't focus on performance testing. In most of cases page rendering take more time than identify a element.
+There are a lot of discussion about CSS Vs. XPath. I don't think performance is a big issue. Because Selenium doesn't focus on performance testing. In most of cases page rendering take more time than identify an element.
 You can also check this article [Css Vs. XPath](http://elementalselenium.com/tips/32-xpath-vs-css). 
 The conclusion is "For starters there is no dramatic difference in performance between XPath and CSS."
 
