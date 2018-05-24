@@ -1,4 +1,4 @@
-# Selenium Web Automation Test Framekwork
+# Selenium Web Automation Test Framework
 
 This is a C# Web automation test framework powered by [Selenium](http://www.seleniumhq.org/) and [SpecFlow](http://specflow.org/). 
 
